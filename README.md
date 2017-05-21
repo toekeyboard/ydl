@@ -4,7 +4,7 @@
 -->
 
 [http://github.com/toekeyboard/ydl](http://github.com/toekeyboard/ydl)  
-[https://board.net/p/ydl123](https://board.net/p/ydl123)  
+[https://board.net/p/ydl](https://board.net/p/ydl)  
 
 IRC channel: #ydl on freenode  
 7pm / 19h (3rd Tue of every month)  
