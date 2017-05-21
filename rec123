@@ -1,0 +1,56 @@
+#unplug/replug in jack
+
+
+#prends le date
+#date=$(date +'%Y%m%dT%H%M%S')
+
+#sox -t alsa default $date.wav
+
+#ffmpeg -i $date.wav $date.ogg
+#rm $date.wav
+
+mkdir -- r 2>&1 > /dev/null
+
+#record
+sox -t alsa default r/output.wav
+#arecord d/output.wav
+
+#annotate
+read -p "Annotate:" annotate
+
+#duration
+duration=$(soxi -D r/output.wav)
+#duration=$(sox d/output.wav -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p')
+#duration=`date -d@$duration -u +%M:%S`
+duration=$(date -d@$duration -u +%M:%S)
+#date -d@$duration -u +%H:%M:%S
+
+filename="$annotate ($duration).ogg"
+
+ffmpeg -i r/output.wav r/"$filename"
+
+rm r/output.wav
+
+
+#duration=$((time sox -t alsa default $date.wav) 2>&1 > /dev/null | grep real | cut -f2)
+#duration=$((time sox -t alsa default $date.wav) 2>&1 > /dev/null | tee grep real | cut -f2)
+#echo $duration
+
+
+#sox output.wav -n stat
+
+#read -p "Annotate:" f
+#filename="$date-$f.ogg"
+#mv $date.ogg "$filename"
+
+
+mpv r/"$filename"
+
+#mpv $date.ogg
+
+echo '---'
+echo r/$filename
+
+#ls -rtl d/
+ls -rtlh r/ | cut -f5- -d" "
+du -sh r/

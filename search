@@ -1,0 +1,25 @@
+#channel name
+query=$@
+
+find ./d/*/$@ -iname "*.vtt"
+
+#find ./*/*/$@ -iname "*__*.vtt"
+
+#find . -iname "*$query*.3gp"
+
+
+#find ./d/en/<CHANNEL_NAME> -iname "*.3gp"
+#cd d/en/<CHANNEL_NAME>
+#mpv *.3gp --sub-file="__en,fr.vtt" --osd-level=3 --fullscreen
+
+#mpv *.3gp --sub-file="_en.vtt" --sub-file="_fr.vtt" --sid=1 --secondary-sid=2 --fullscreen
+#mpv *.3gp --sub-file="_en.vtt" --sub-file="_fr.vtt" --sid=1 --secondary-sid=2 --osd-level=3 --fullscreen
+#mpv *.$fileformat $subtitle_option --sub-file=__empty.vtt --sid=1 --secondary-sid=2 --osd-level=3 --fullscreen
+
+
+
+#https://duckduckgo.com/?q=bash+find+and+delete+rm&t=ffab&ia=qa
+#http://unix.stackexchange.com/questions/89925/how-to-delete-directories-based-on-find-output#89929
+#cd d/<channel>
+#find . -name "__*.vtt"
+#find . -name "__*.vtt" -exec rm "{}" \;
