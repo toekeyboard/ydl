@@ -1,7 +1,7 @@
-<!--
 ![alt tag](https://github.com/toekeyboard/ydl/blob/master/sample.gif?raw=true)  
--->
+<!--
 ![alt tag](http://i.imgur.com/TQl4i2J.gif)  
+-->
 
 [http://github.com/toekeyboard/ydl](http://github.com/toekeyboard/ydl)  
 [https://board.net/p/ydl123](https://board.net/p/ydl123)  
