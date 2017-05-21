@@ -1,10 +1,13 @@
+<!--
 ![alt tag](https://github.com/toekeyboard/ydl/blob/master/sample.gif?raw=true)  
+-->
+![alt tag](http://i.imgur.com/TQl4i2J.gif)  
 
 [http://github.com/toekeyboard/ydl](http://github.com/toekeyboard/ydl)  
 [https://board.net/p/ydl123](https://board.net/p/ydl123)  
 
-IRC channel: #ydl on freenode 
-7pm / 19h (3rd Tue of every month)
+IRC channel: #ydl on freenode  
+7pm / 19h (3rd Tue of every month)  
 ([webchat1](https://kiwiirc.com/client/irc.freenode.net/?nick=a|?#ydl) / [webchat2](http://webchat.freenode.net/?randomnick=1&channels=ydl))  
 
 
@@ -22,6 +25,7 @@ Video subtitle player:
 
 -l LANGS        Languages of the subtitles to download separated by commas  
 d/ 		Videos and subtitles stored in this directory (under channel or username)
+l.txt		Example Youtube Channels with language subtitles
 
 Voice recorder:
 
@@ -317,7 +321,7 @@ https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
 
 
-##Other Resources##
+## Other Resources ##
 
 	https://en.wikiversity.org/wiki/School:Language_and_Literature
 	https://en.wikiversity.org/wiki/Portal:Foreign_Language_Learning  
@@ -395,4 +399,4 @@ https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 		https://en.wikipedia.org/wiki/Anki_%28software%29
 
 
-Version: 2017-05-20
+Version: 2017-05-21
