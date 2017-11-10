@@ -29,7 +29,7 @@ l.txt		Example Youtube Channels with language subtitles
 
 Voice recorder:
 
-	rec123 
+	record
 
 r/		Recordings are stored in this directory
 
@@ -52,7 +52,7 @@ ydl:
 	mpv - video player based on MPlayer/mplayer2  
 	wget - retrieves files from the web  
 
-rec123:
+record:
 
 	sox - Swiss army knife of sound processing  
 	libogg0 - Ogg bitstream library  
