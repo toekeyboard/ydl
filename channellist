@@ -1,0 +1,3 @@
+#usage:  channellist <LANG>
+
+cat d/$1/z-channel_list

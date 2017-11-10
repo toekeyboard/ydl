@@ -3,6 +3,265 @@ ydl123 -l LANGS -m 60 https://www.youtube.com/channel/<CHANNELID>
 	#max 999 default
 
 
+youtube-dl
+       --all-subs
+              Download all the available subtitles of the video
+
+       --list-subs
+              List all available subtitles for the video
+
+https://www.youtube.com/results?search_query=comedia		//filter Relevance
+https://www.youtube.com/results?sp=CAJQFA%253D%253D&q=comedia	//filter Upload date
+https://www.youtube.com/results?sp=EgIQAlAU&q=comedia		//filter Channel
+https://www.youtube.com/results?sp=CANQFA%253D%253D&q=comedia	//filter Views
+
+
+
+http://wiki.apertium.org/wiki/List_of_language_pairs
+
+
+
+
+----template
+		--rap 
+
+		--news 
+		--government 
+
+		--university 
+		--physics 
+
+		--entertainment 
+		--comedy 
+		--podcast
+
+		--kids
+		--cartoons
+
+		--mma
+		--boxing
+		--dancing
+
+
+		--<topic> <langugage_code>
+
+
+
+	-cherche dans youtube.com, arranger selon canal
+	-prends le nom de URL
+	-regarder a le chaine, pour les chaines 'Lié' / 'Related Channels' / Suggester Chaines
+
+	--rap
+		https://en.wikipedia.org/wiki/Music
+		https://en.wikipedia.org/wiki/Hip_hop
+		https://en.wikipedia.org/wiki/Hip_hop_music
+		https://en.wikipedia.org/wiki/Rapping
+		https://en.wikipedia.org/wiki/Rap
+			-aller a wikipedia.org, prends le nom de le topic dans la langue native
+
+	--news
+		https://en.wikipedia.org/wiki/International_news_channels
+		https://en.wikipedia.org/wiki/List_of_news_television_channels
+		https://en.wikipedia.org/wiki/List_of_news_presenters
+			-aller a wikipedia.org, aller a le URL de chaine de nouvelle.  changer a le URL dans la langue native
+
+	--university
+		https://en.wikipedia.org/wiki/University
+			-aller a wikipedia.org, prends le nom de le topic dans la langue native
+
+	--comedy
+		https://en.wikipedia.org/wiki/Comedy
+			-aller a wikipedia.org, prends le nom de le topic dans la langue native
+			-prends dans le premiere page regular, et cherche pour les chaines
+
+			-scroll down regular/relevance search result page, et trouver les plus frequent user uploaders.
+			-arranger par "Upload date", plus recent?
+
+
+	--mma
+		https://en.wikipedia.org/wiki/Mixed_martial_arts
+	--boxing
+		https://en.wikipedia.org/wiki/Boxing
+
+
+----acceptable language codes		ydl123 -l LANGS		youtube-dl -l LANGS
+
+	es	Indo-European   Spanish         español   
+	fr	Indo-European   French  français, langue française  
+	pt	Indo-European   Portuguese      Português    
+	it	Indo-European   Italian         italiano    
+	ca      Indo-European   Catalan         català 
+	gl      Indo-European   Galician        galego
+	ro	Indo-European   Romanian        Română
+	la      Indo-European 	Latin 	latine, lingua latina
+
+	nl	Indo-European   Dutch   Nederlands, Vlaams
+	af	Indo-European   Afrikaans       Afrikaans
+	da	Indo-European   Danish  dansk
+	fy      Indo-European 	Western Frisian 	Frysk
+	lb      Indo-European 	Luxembourgish, Letzeburgesch 	Lëtzebuergesch
+
+	ru	Indo-European   Russian         Русский
+	uk	Indo-European 	Ukrainian 	Українська
+	bg      Indo-European 	Bulgarian 	български език
+	sr      Indo-European 	Serbian 	српски језик
+
+	hi	Indo-European   Hindi   हिन्दी, हिंदी
+
+	si	Indo-European 	Sinhalese, Sinhala 	සිංහල 	
+	ta	Dravidian 	Tamil 	தமிழ் 	t
+
+	ur	Indo-European   Urdu    ﺍﺭﺩﻭ
+	fa	Indo-European   Persian (Farsi)         ﻑﺍﺮﺳی
+	pa	Indo-European   Eastern Punjabi, Eastern Panjabi        ਪੰਜਾਬੀ
+	hy      Indo-European 	Armenian 	Հայերեն
+
+	de	Indo-European   German  Deutsch
+	en	Indo-European   English         English
+
+	ko      Koreanic        Korean  한국어
+	ja      Japonic         Japanese        日本語 (にほんご)  
+
+	zh-Hans		mandarin:  china / taiwan  (more pop content, since linked to US?)
+	zh-Hant		cantonese
+		Sino-Tibetan    Chinese         中文 (Zhōngwén), 汉语, 漢語
+
+
+
+
+	ar      Afro-Asiatic    Arabic	  ﺎﻠﻋﺮﺒﻳﺓ ar
+	so	Afro-Asiatic 	Somali 	Soomaaliga, af Soomaali
+
+	he	Afro-Asiatic 	Hebrew (modern) 	עברית	
+	yi	Indo-European 	Yiddish 	ייִדיש	yi 	yid 	yid 	yid + 2 		macrolanguage
+
+	vi	Austroasiatic 	Vietnamese 	Tiếng Việt
+
+	fil	Austronesian 	Tagalog 	Wikang Tagalog 	tl 	tgl 	tgl 	tgl 		Note: Filipino (Pilipino) has the code [fil]
+	ceb
+		closely related to other Filipino languages.	fil
+		│ 3  │ Cebuano     │ Sinugboanong │ ceb  
+		│    │             │ Binisaya     │      
+		https://en.wikipedia.org/wiki/Cebuano_language
+		https://en.wikipedia.org/wiki/Visayan_languages
+	id	Austronesian 	Indonesian 	Bahasa Indonesia
+
+	pl	Indo-European   Polish  język polski, polszczyzna
+	lv      Indo-European 	Latvian 	latviešu valoda
+	lt      Indo-European 	Lithuanian 	lietuvių kalba
+
+	el	Indo-European	Greek (modern)			ελληνικά
+
+
+	no      Indo-European 	Norwegian 	Norsk
+	sv      Indo-European 	Swedish 	svenska
+
+	fi      Uralic  Finnish         suomi, suomen kieli  
+
+	tr	Turkic 	Turkish 	Türkçe 	tr 	tur 	tur 	tur 		
+	mn	Mongolic 	Mongolian 	Монгол хэл
+
+	ht      Creole  	Haitian, Haitian Creole         Kreyòl ayisyen
+
+
+
+	---no option in youtube
+	cr	Algonquian	Cree				ᓀᐦᐃᔭᐍᐏᐣ		
+	oj	Algonquian	Ojibwe, Ojibwa			ᐊᓂᔑᓈᐯᒧᐎᓐ	
+
+
+
+
+1) traduire dans la langue
+	https://translate.google.com/#auto/<LANG>/<WORD>
+		https://translate.google.com/#auto/ko/university
+
+	https://en.wikipedia.org/wiki/Rapping
+		-prends le translation / language
+
+	https://en.wikipedia.org/wiki/<WORD>
+		https://<LANG>.wikipedia.org/wiki/<WORD>
+
+	late night
+	talk show
+	comedy
+		https://en.wikipedia.org/wiki/Comedy
+	university
+	physics
+	rapping
+	government
+		https://en.wikipedia.org/wiki/Government
+	city hall
+		https://en.wikipedia.org/wiki/Seat_of_local_government
+
+2) recherhez dans youtube.com selon 'Channel'
+	-arrange selon 'Canal' & 'Numero de visualizaciones'
+
+	cherche dans /channels
+		https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ		Late Motiv
+			https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ/featured	?same
+			Canales destacados
+			Related channels
+		https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ/channels
+		https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ/playlists
+
+
+
+
+
+----hip hop
+----rap
+	https://en.wikipedia.org/wiki/Rapping
+	https://en.wikipedia.org/wiki/List_of_most_viewed_YouTube_videos
+	https://sv.wikipedia.org/wiki/Freestylebattle
+	https://en.wikipedia.org/wiki/Battle_rap
+	https://ar.wikipedia.org/wiki/%D8%B1%D8%A7%D8%A8
+	https://en.wikipedia.org/wiki/Freestyle_rap
+
+	http://epicrapbattlesofhistory.wikia.com/wiki/List_of_Epic_Rap_Battles_of_History_episodes
+
+	https://en.wikipedia.org/wiki/Comparison_of_video_hosting_services
+	https://en.wikipedia.org/wiki/List_of_video_hosting_services
+
+
+	https://fr.wikipedia.org/wiki/Liste_de_musiciens_hip-hop
+	https://en.wikipedia.org/wiki/List_of_hip_hop_musicians
+
+	https://de.wikipedia.org/wiki/Rap
+	https://de.wikipedia.org/wiki/Liste_von_Hip-Hop-Musikern
+	https://de.wikipedia.org/wiki/Liste_von_Hip-Hop-Musikern_Deutschlands#Gruppen
+	https://de.wikipedia.org/wiki/Liste_von_Hip-Hop-Musikern_Deutschlands
+
+
+
+----music
+	https://www.youtube.com/results?q=%E5%8D%B3%E8%88%88%E9%A5%92%E8%88%8C&sp=EgIQAg%253D%253D
+	https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=MC%E3%83%90%E3%83%88%E3%83%AB
+
+	https://ja.wikipedia.org/wiki/MC%E3%83%90%E3%83%88%E3%83%AB
+	https://zh.wikipedia.org/wiki/%E5%8D%B3%E8%88%88%E9%A5%92%E8%88%8C
+
+
+
+
+	https://en.wikipedia.org/wiki/List_of_best-selling_singles#Best-selling_single_by_year_worldwide
+	https://en.wikipedia.org/wiki/List_of_best-selling_singles
+
+	https://en.wikipedia.org/wiki/List_of_best-selling_albums_by_country
+	https://zh.wikipedia.org/wiki/%E5%90%84%E5%9B%BD%E5%8F%8A%E5%9C%B0%E5%8C%BA%E6%9C%80%E7%95%85%E9%94%80%E4%B8%93%E8%BE%91%E5%88%97%E8%A1%A8
+
+	https://en.wikipedia.org/wiki/List_of_best-selling_girl_groups
+
+
+
+
+----university
+----physics
+	https://en.wikipedia.org/wiki/University
+	https://en.wikipedia.org/wiki/Particle_physics
+
+	https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=Universidad+de+Almería
+	https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=Universidad+de+M%C3%A1laga
 
 
 
@@ -10,6 +269,122 @@ ydl123 -l LANGS -m 60 https://www.youtube.com/channel/<CHANNELID>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----entertainment
+	https://en.wikipedia.org/wiki/Late-night_talk_show#Italy
+
+	https://en.wikipedia.org/wiki/Talk_show
+	https://en.wikipedia.org/wiki/List_of_talk_show_hosts
+	https://en.wikipedia.org/wiki/List_of_game_show_hosts
+	https://en.wikipedia.org/wiki/Late-night_talk_show
+
+----talk shows
+----late night
+----latenight
+        https://www.youtube.com/channel/UCzlzGhKI5Y1LIeDJI53cWjQ                Вечерний Ургант         //russian       -Russie
+        https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ                Late Motiv              //espanol       -Espana
+        https://www.youtube.com/channel/UCd-P95WFOH6aK3z3apWgISQ                Programa do Porchat     //portugues     -Brazil
+        https://www.youtube.com/user/MySpassde                                  MySpass.com             //deutsch       -Deutschland
+        https://www.youtube.com/user/VSSpass                                    Verstehen Sie Spaß?     //deutsch       -deutschland
+
+
+
+----mma organisations
+----mma organizations
+https://en.wikipedia.org/wiki/International_Fight_League
+https://en.wikipedia.org/wiki/Mixed_martial_arts
+
+https://en.wikipedia.org/wiki/Shootfighting
+https://en.wikipedia.org/wiki/Shooto
+
+https://en.wikipedia.org/wiki/List_of_Mixed_Martial_Artists_with_the_most_sanctioned_fights
+
+https://en.wikipedia.org/wiki/List_of_current_mixed_martial_arts_champions
+        https://www.youtube.com/user/M1GlobalRussia
+                https://en.wikipedia.org/wiki/M-1_Global
+                https://ru.wikipedia.org/wiki/M-1_Global                        //russian
+
+        https://www.youtube.com/user/roadfc
+                https://en.wikipedia.org/wiki/Road_Fighting_Championship
+                https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%93%9C_FC             //korean
+
+        https://www.youtube.com/user/pancrasechannel
+                https://en.wikipedia.org/wiki/Pancrase
+                https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%B3%E3%82%AF%E3%83%A9%E3%82%B9     //japanese
+                        -female mma?
+
+
+        https://www.youtube.com/channel/UCrzcqokfdjCm0JiqzYJZxeA
+                https://en.wikipedia.org/wiki/Jewels_%28mixed_martial_arts%29
+                https://ja.wikipedia.org/wiki/JEWELS                            //japanese
+                        -female mma
+
+                https://en.wikipedia.org/wiki/Deep_%28mixed_martial_arts%29
+                https://ja.wikipedia.org/wiki/DEEP_%28%E6%A0%BC%E9%97%98%E6%8A%80%E5%9B%A3%E4%BD%93%29
+
+        jungle fight                    //portuguese
+                https://en.wikipedia.org/wiki/Jungle_Fight
+                https://pt.wikipedia.org/wiki/Jungle_Fight
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----news
+	https://en.wikipedia.org/wiki/International_news_channels
+	https://en.wikipedia.org/wiki/List_of_news_television_channels
+
+	https://en.wikipedia.org/wiki/Lists_of_newspapers
+	https://rsf.org/en/ranking
+		http://en.wikipedia.org/wiki/Reporters_Without_Borders
+
+
+	https://en.wikipedia.org/wiki/News_broadcasting
+
+	https://en.wikipedia.org/wiki/List_of_newspapers_in_Germany
+	https://en.wikipedia.org/wiki/List_of_German-language_television_channels
+	https://en.wikipedia.org/wiki/List_of_television_stations_in_Germany
+	http://wwitv.com/television/81.htm
 
 
 ----news channels
@@ -241,270 +616,56 @@ http://en.wikipedia.org/wiki/Reporters_Without_Borders
 		  • 180	North Korea	84.98
 
 
-
-
-
 ----elections
-
        https://en.wikipedia.org/wiki/List_of_elections_in_2017
        https://en.wikipedia.org/wiki/List_of_next_general_elections
 
 
-----acceptable language codes		ydl123 -l LANGS		youtube-dl -l LANGS
 
-es	Indo-European   Spanish         español   
-fr	Indo-European   French  français, langue française  
-pt	Indo-European   Portuguese      Português    
-it	Indo-European   Italian         italiano    
-ca      Indo-European   Catalan         català 
-gl      Indo-European   Galician        galego
-ro	Indo-European   Romanian        Română
-la       Indo-European 	Latin 	latine, lingua latina
 
-nl	Indo-European   Dutch   Nederlands, Vlaams
-af	Indo-European   Afrikaans       Afrikaans
-da	Indo-European   Danish  dansk
-fy      Indo-European 	Western Frisian 	Frysk
-lb      Indo-European 	Luxembourgish, Letzeburgesch 	Lëtzebuergesch
 
-ru	Indo-European   Russian         Русский
-uk	Indo-European 	Ukrainian 	Українська
-bg      Indo-European 	Bulgarian 	български език
-sr      Indo-European 	Serbian 	српски језик
 
-hi	Indo-European   Hindi   हिन्दी, हिंदी
 
-si	Indo-European 	Sinhalese, Sinhala 	සිංහල 	
-ta	Dravidian 	Tamil 	தமிழ் 	t
 
-ur	Indo-European   Urdu    ﺍﺭﺩﻭ
-fa	Indo-European   Persian (Farsi)         ﻑﺍﺮﺳی
-pa	Indo-European   Eastern Punjabi, Eastern Panjabi        ਪੰਜਾਬੀ
-hy      Indo-European 	Armenian 	Հայերեն
 
-de	Indo-European   German  Deutsch
-en	Indo-European   English         English
 
-ko      Koreanic        Korean  한국어
-ja      Japonic         Japanese        日本語 (にほんご)  
 
-zh-Hans		mandarin:  china / taiwan  (more pop content, since linked to US?)
-zh-Hant		cantonese
-	Sino-Tibetan    Chinese         中文 (Zhōngwén), 汉语, 漢語
 
 
 
 
-ar      Afro-Asiatic    Arabic	  ﺎﻠﻋﺮﺒﻳﺓ ar
-so	Afro-Asiatic 	Somali 	Soomaaliga, af Soomaali
 
-he	Afro-Asiatic 	Hebrew (modern) 	עברית	
-yi	Indo-European 	Yiddish 	ייִדיש	yi 	yid 	yid 	yid + 2 		macrolanguage
 
-vi	Austroasiatic 	Vietnamese 	Tiếng Việt
 
-fil	Austronesian 	Tagalog 	Wikang Tagalog 	tl 	tgl 	tgl 	tgl 		Note: Filipino (Pilipino) has the code [fil]
-ceb
-	closely related to other Filipino languages.	fil
-	│ 3  │ Cebuano     │ Sinugboanong │ ceb  
-	│    │             │ Binisaya     │      
-	https://en.wikipedia.org/wiki/Cebuano_language
-	https://en.wikipedia.org/wiki/Visayan_languages
-id	Austronesian 	Indonesian 	Bahasa Indonesia
 
-pl	Indo-European   Polish  język polski, polszczyzna
-lv      Indo-European 	Latvian 	latviešu valoda
-lt      Indo-European 	Lithuanian 	lietuvių kalba
 
-el	Indo-European	Greek (modern)			ελληνικά
 
 
-no      Indo-European 	Norwegian 	Norsk
-sv      Indo-European 	Swedish 	svenska
 
-fi      Uralic  Finnish         suomi, suomen kieli  
 
-tr	Turkic 	Turkish 	Türkçe 	tr 	tur 	tur 	tur 		
-mn	Mongolic 	Mongolian 	Монгол хэл
 
-ht      Creole  	Haitian, Haitian Creole         Kreyòl ayisyen
 
 
 
----no option in youtube
-cr	Algonquian	Cree				ᓀᐦᐃᔭᐍᐏᐣ		
-oj	Algonquian	Ojibwe, Ojibwa			ᐊᓂᔑᓈᐯᒧᐎᓐ	
 
 
 
 
-1) traduire dans la langue
-	https://translate.google.com/#auto/<LANG>/<WORD>
-		https://translate.google.com/#auto/ko/university
 
-	https://en.wikipedia.org/wiki/Rapping
-		-prends le translation / language
 
-	https://en.wikipedia.org/wiki/<WORD>
-		https://<LANG>.wikipedia.org/wiki/<WORD>
 
-	late night
-	talk show
-	comedy
-		https://en.wikipedia.org/wiki/Comedy
-	university
-	physics
-	rapping
-	government
-		https://en.wikipedia.org/wiki/Government
-	city hall
-		https://en.wikipedia.org/wiki/Seat_of_local_government
 
-2) recherhez dans youtube.com selon 'Channel'
-	-arrange selon 'Canal' & 'Numero de visualizaciones'
 
-	cherche dans /channels
-		https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ		Late Motiv
-			https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ/featured	?same
-			Canales destacados
-			Related channels
-		https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ/channels
-		https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ/playlists
 
 
 
 
 
-----hip hop
-----rap
-	https://en.wikipedia.org/wiki/Rapping
-	https://en.wikipedia.org/wiki/List_of_most_viewed_YouTube_videos
-	https://sv.wikipedia.org/wiki/Freestylebattle
-	https://en.wikipedia.org/wiki/Battle_rap
-	https://ar.wikipedia.org/wiki/%D8%B1%D8%A7%D8%A8
-	https://en.wikipedia.org/wiki/Freestyle_rap
 
-	http://epicrapbattlesofhistory.wikia.com/wiki/List_of_Epic_Rap_Battles_of_History_episodes
 
-	https://en.wikipedia.org/wiki/Comparison_of_video_hosting_services
-	https://en.wikipedia.org/wiki/List_of_video_hosting_services
 
 
-	https://fr.wikipedia.org/wiki/Liste_de_musiciens_hip-hop
-	https://en.wikipedia.org/wiki/List_of_hip_hop_musicians
 
-	https://de.wikipedia.org/wiki/Rap
-	https://de.wikipedia.org/wiki/Liste_von_Hip-Hop-Musikern
-	https://de.wikipedia.org/wiki/Liste_von_Hip-Hop-Musikern_Deutschlands#Gruppen
-	https://de.wikipedia.org/wiki/Liste_von_Hip-Hop-Musikern_Deutschlands
-
-
-
-----music
-	https://www.youtube.com/results?q=%E5%8D%B3%E8%88%88%E9%A5%92%E8%88%8C&sp=EgIQAg%253D%253D
-	https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=MC%E3%83%90%E3%83%88%E3%83%AB
-
-	https://ja.wikipedia.org/wiki/MC%E3%83%90%E3%83%88%E3%83%AB
-	https://zh.wikipedia.org/wiki/%E5%8D%B3%E8%88%88%E9%A5%92%E8%88%8C
-
-
-
-
-	https://en.wikipedia.org/wiki/List_of_best-selling_singles#Best-selling_single_by_year_worldwide
-	https://en.wikipedia.org/wiki/List_of_best-selling_singles
-
-	https://en.wikipedia.org/wiki/List_of_best-selling_albums_by_country
-	https://zh.wikipedia.org/wiki/%E5%90%84%E5%9B%BD%E5%8F%8A%E5%9C%B0%E5%8C%BA%E6%9C%80%E7%95%85%E9%94%80%E4%B8%93%E8%BE%91%E5%88%97%E8%A1%A8
-
-	https://en.wikipedia.org/wiki/List_of_best-selling_girl_groups
-
-
-
-
-----university
-----physics
-	https://en.wikipedia.org/wiki/University
-	https://en.wikipedia.org/wiki/Particle_physics
-
-	https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=Universidad+de+Almería
-	https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=Universidad+de+M%C3%A1laga
-
-
-
-
-
-
-
-----entertainment
-	https://en.wikipedia.org/wiki/Late-night_talk_show#Italy
-
-
-	https://en.wikipedia.org/wiki/Talk_show
-	https://en.wikipedia.org/wiki/List_of_talk_show_hosts
-	https://en.wikipedia.org/wiki/List_of_game_show_hosts
-
-
-----news
-	https://en.wikipedia.org/wiki/International_news_channels
-	https://en.wikipedia.org/wiki/List_of_news_television_channels
-
-	https://en.wikipedia.org/wiki/Lists_of_newspapers
-	https://rsf.org/en/ranking
-		http://en.wikipedia.org/wiki/Reporters_Without_Borders
-
-
-	https://en.wikipedia.org/wiki/News_broadcasting
-
-	https://en.wikipedia.org/wiki/List_of_newspapers_in_Germany
-	https://en.wikipedia.org/wiki/List_of_German-language_television_channels
-	https://en.wikipedia.org/wiki/List_of_television_stations_in_Germany
-	http://wwitv.com/television/81.htm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://en.wikipedia.org/wiki/Late-night_talk_show
-
-https://en.wikipedia.org/wiki/International_news_channels
-https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 ----Indo-European
@@ -515,113 +676,128 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 		--rap es
 			--batalla rap es
+
+			https://www.youtube.com/user/GallosAlicante    FullRap Alicante
+                                844 videos      1) Published on Sep 7, 2017     2:31
+				-calle
+				-musica videos
+			https://www.youtube.com/channel/UCzufLUhUxkHdt3Wuh-23iWQ    FullRap Valencia
+                                1,028 videos    1) Published on Jul 22, 2017    2:09
+				-calle
+			https://www.youtube.com/user/FullRapMadrid    FullRap Madrid
+				2,883 videos    1) Published on Jul 10, 2017    8:10
+				-bueno.  stage batalla rap.  professional recordings
+			https://www.youtube.com/channel/UCvcXc3zQk-YXMPi5ZM664xg    FullRap Granada
+                                1,168 videos    2) Published on Jun 7, 2017     3:12
+				-granada, south america
+				-calle batalla rap
+			https://www.youtube.com/channel/UCCcoO6o7uuCbjjEdy6vf6xQ    La Banda de Bani
+				151 videos    9) Published on Apr 2, 2017
+			https://www.youtube.com/channel/UCktBQHjk7aKt4c5sfVVWoGw    Rap, Batallas y mas
+				13 videos    1) Published on Feb 25, 2017
+				-50sec stage batalla rap.  professional recordings
+				-solo duo video
+			https://www.youtube.com/channel/UCrJl-kgKEZzcpY7g2KidD0w    GENERAL RAP GALICIA
+				305 videos    7) Published on Feb 22, 2017
+				-calle
+				-vblog
+			https://www.youtube.com/user/Xemnalex98    Keyblade
+				223 videos    1) Published on Feb 10, 2017
+				-cartoon video rap.  uncomprehensible.  professional recording
+			https://www.youtube.com/channel/UCpzy7npr-qZ7G3xCR9-xArQ    Full Mota Rap Tenerife
+				353 videos    1) Published on Feb 9, 2017
+				-calle battala rap
+			https://www.youtube.com/channel/UCKcKCOYGjRB_JXJv9DgVAtA    Freestyle Villalba
+				110 videos    1) Published on Feb 9, 2017
+			https://www.youtube.com/user/RAPZetaeMe    ZetaRapPlays
+				106 videos    1) Published on Feb 8, 2017
+			https://www.youtube.com/channel/UC_Ftj0ENH0__xi7dDnSz0Zw    Valles-T RAP
+				46 videos    1) Published on Feb 8, 2017
+				-casa rap.  audio malo
+			https://www.youtube.com/user/sededege    Rap God
+				156 videos    2) Published on Feb 7, 2017
+				-grito / chillando.  screaming calle batalla rap
+			https://www.youtube.com/channel/UCb-sTcnYPQWdC_hEcW5JASA    Rap Corredor
+				94 videos    1) Published on Feb 6, 2017
+			https://www.youtube.com/user/TerritorioDeJugones2    FullRap Cantabria
+				387 videos    1) Published on Jan 30, 2017
+			https://www.youtube.com/channel/UCM1oN4YGaTXYH2vzMxK98kQ    LVCVS RAP
+				175 videos    1) Published on Jan 23, 2017
+				-calle batalla rap
+			https://www.youtube.com/channel/UC1IZ-JYEQaCc8MIzeA0yjBA    Rap Rieras
+				45 videos    1) Published on Dec 24, 2016
+				-calle batalla rap
+				-political rap
+			https://www.youtube.com/channel/UC2JYYpciIpbZdNZfKkgBPXQ    Batalla RAP GALLOS
+				25 videos    1) Published on Dec 9, 2016
+
+
+
 			https://www.youtube.com/results?q=rap+batalla&sp=EgIQAg%253D%253D
 			https://www.youtube.com/results?q=batalla+rap+Espa%C3%B1ol&sp=EgIQAg%253D%253D
 
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=batalla+rap
-				https://www.youtube.com/channel/UCCcoO6o7uuCbjjEdy6vf6xQ    La Banda de Bani
-					151 videos    9) Published on Apr 2, 2017
-				https://www.youtube.com/user/FullRapMadrid    FullRap Madrid
-					2,842 videos    4) Published on Mar 13, 2017
-					-bueno.  stage batalla rap.  professional recordings
-				https://www.youtube.com/channel/UCzufLUhUxkHdt3Wuh-23iWQ    FullRap Valencia
-					820 videos    1) Published on Mar 6, 2017
-				https://www.youtube.com/channel/UCktBQHjk7aKt4c5sfVVWoGw    Rap, Batallas y mas
-				        13 videos    1) Published on Feb 25, 2017
-					-50sec stage batalla rap.  professional recordings
-					-solo duo video
-				https://www.youtube.com/channel/UCrJl-kgKEZzcpY7g2KidD0w    GENERAL RAP GALICIA
-					305 videos    7) Published on Feb 22, 2017
-					-calle
-					-vblog
-				https://www.youtube.com/user/GallosAlicante    FullRap Alicante
-					704 videos    1) Published on Feb 13, 2017
-					-calle
-				https://www.youtube.com/user/Xemnalex98    Keyblade
-					223 videos    1) Published on Feb 10, 2017
-					-cartoon video rap.  uncomprehensible.  professional recording
-				https://www.youtube.com/channel/UCpzy7npr-qZ7G3xCR9-xArQ    Full Mota Rap Tenerife
-					353 videos    1) Published on Feb 9, 2017
-					-calle battala rap
-				https://www.youtube.com/channel/UCKcKCOYGjRB_JXJv9DgVAtA    Freestyle Villalba
-					110 videos    1) Published on Feb 9, 2017
-				https://www.youtube.com/user/RAPZetaeMe    ZetaRapPlays
-					106 videos    1) Published on Feb 8, 2017
-				https://www.youtube.com/channel/UC_Ftj0ENH0__xi7dDnSz0Zw    Valles-T RAP
-					46 videos    1) Published on Feb 8, 2017
-					-casa rap.  audio malo
-				https://www.youtube.com/user/sededege    Rap God
-					156 videos    2) Published on Feb 7, 2017
-					-grito / chillando.  screaming calle batalla rap
-				https://www.youtube.com/channel/UCb-sTcnYPQWdC_hEcW5JASA    Rap Corredor
-					94 videos    1) Published on Feb 6, 2017
-				https://www.youtube.com/channel/UCvcXc3zQk-YXMPi5ZM664xg    FullRap Granada
-					938 videos    1) Published on Feb 3, 2017
-					-granada, south america
-					-calle batalla rap
-				https://www.youtube.com/user/TerritorioDeJugones2    FullRap Cantabria
-					387 videos    1) Published on Jan 30, 2017
-				https://www.youtube.com/channel/UCM1oN4YGaTXYH2vzMxK98kQ    LVCVS RAP
-					175 videos    1) Published on Jan 23, 2017
-					-calle batalla rap
-				https://www.youtube.com/channel/UC1IZ-JYEQaCc8MIzeA0yjBA    Rap Rieras
-					45 videos    1) Published on Dec 24, 2016
-					-calle batalla rap
-					-political rap
-				https://www.youtube.com/channel/UC2JYYpciIpbZdNZfKkgBPXQ    Batalla RAP GALLOS
-					25 videos    1) Published on Dec 9, 2016
 
 
 
+
+
+
+
+
+
+			--rap espana
+                        https://www.youtube.com/user/RaperosCristianosYT    Raperos Cristianos TV
+                                192 videos      3) Published on Aug 10, 2017    6:39
+				-music videos
+                        https://www.youtube.com/user/marcosbigfoot    Marcos Rap
+                                373 videos      1) Published on May 19, 2017    0:07
+				-!mucho bueno, 1h48m canciones
+                        https://www.youtube.com/user/quederap    Que de Rap
+                                4,920 videos    5) Published on Jan 9, 2017     2:23
+				-bueno, canciones
+				-stresse
+			https://www.youtube.com/channel/UC-BpLztHF5G8ll-1qRd5R6w    Respiro Rap
+				26 videos    5) Published on Nov 22, 2016
+				-bueno, canciones
+			https://www.youtube.com/channel/UCgC5qhdk2CM9u6fW7WqhPpg    Rap Show Tv
+				44 videos    2) Published on Nov 15, 2016
+			https://www.youtube.com/user/ggs1997    Rap Letras
+				75 videos    1) Published on Jul 24, 2016
+			https://www.youtube.com/channel/UCD9bT9zDudG_PxRHdZzguhg    Rap Latino y Español
+				21 videos    3) Published on Jun 20, 2016
+				-rap battle.  malo audio qualite
+			https://www.youtube.com/channel/UCArd6JxpXkEmkplCvEIOwWw    Rap En Español
+				42 videos    5) Published on Dec 22, 2015
+				-bueno, canciones
+			https://www.youtube.com/user/IYuzukeI    HIP HOP LatinoAmérica &amp; Rap Español
+				    1) Published on Aug 28, 2014
+				-hip hop politica
+			https://www.youtube.com/user/1100crew    1100crew
+				306 videos    14) Uploaded on Sep 25, 2011
+			https://www.youtube.com/user/TimadoresAnonimos    TimadoresAnonimos
+				627 videos    5) Uploaded on Jul 31, 2011
+				-musica, bueno
+			https://www.youtube.com/user/Rapandtribal    Tribal House and Rap music.
+				41 videos    4) Uploaded on Apr 15, 2010
+			https://www.youtube.com/user/SpanishHipHop    Spanish Hip Hop ®
+				126 videos    4) Uploaded on Jun 5, 2009
 
 
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=rap+Espa%C3%B1ol
-				https://www.youtube.com/user/marcosbigfoot
-					372 videos    1) Published on Jan 26, 2017
-					-!mucho bueno, 1h48m canciones
-				https://www.youtube.com/user/quederap
-					 4,918 videos    3) Published on Jan 9, 2017
-					-bueno, canciones
-					-stresse
-				https://www.youtube.com/channel/UC-BpLztHF5G8ll-1qRd5R6w    Respiro Rap
-					26 videos    5) Published on Nov 22, 2016
-					-bueno, canciones
-				https://www.youtube.com/user/RaperosCristianosYT    Raperos Cristianos TV
-					158 videos    5) Published on Nov 16, 2016
-				https://www.youtube.com/channel/UCgC5qhdk2CM9u6fW7WqhPpg    Rap Show Tv
-					44 videos    2) Published on Nov 15, 2016
-				https://www.youtube.com/user/ggs1997    Rap Letras
-					75 videos    1) Published on Jul 24, 2016
-				https://www.youtube.com/channel/UCD9bT9zDudG_PxRHdZzguhg    Rap Latino y Español
-					21 videos    3) Published on Jun 20, 2016
-					-rap battle.  malo audio qualite
-				https://www.youtube.com/channel/UCArd6JxpXkEmkplCvEIOwWw    Rap En Español
-					42 videos    5) Published on Dec 22, 2015
-					-bueno, canciones
-				https://www.youtube.com/user/IYuzukeI    HIP HOP LatinoAmérica &amp; Rap Español
-					    1) Published on Aug 28, 2014
-					-hip hop politica
-				https://www.youtube.com/user/1100crew    1100crew
-					306 videos    14) Uploaded on Sep 25, 2011
-				https://www.youtube.com/user/TimadoresAnonimos    TimadoresAnonimos
-					627 videos    5) Uploaded on Jul 31, 2011
-					-musica, bueno
-				https://www.youtube.com/user/Rapandtribal    Tribal House and Rap music.
-					41 videos    4) Uploaded on Apr 15, 2010
-				https://www.youtube.com/user/SpanishHipHop    Spanish Hip Hop ®
-					126 videos    4) Uploaded on Jun 5, 2009
 
 
 
 
-				https://www.youtube.com/user/polloscrewed
-					-malo.. un poco videos con subtitles.  sep 2016
-				https://www.youtube.com/user/isma1056el    HipHop/Rap en Español
-					52 videos    1) Published on Dec 22, 2016
-					-malo, dj mix change rapidement
-				https://www.youtube.com/user/MegaMiguelalonso    MegaMiguelalonso
-					5 videos    1) Published on Aug 23, 2012
-					-gaming / videos juegos ordinateur
+
+			https://www.youtube.com/user/polloscrewed
+				-malo.. un poco videos con subtitles.  sep 2016
+			https://www.youtube.com/user/isma1056el    HipHop/Rap en Español
+				52 videos    1) Published on Dec 22, 2016
+				-malo, dj mix change rapidement
+			https://www.youtube.com/user/MegaMiguelalonso    MegaMiguelalonso
+				5 videos    1) Published on Aug 23, 2012
+				-gaming / videos juegos ordinateur
 
 			#https://www.youtube.com/user/xshudyx
 			#https://www.youtube.com/user/music2shareTV
@@ -642,17 +818,20 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 		--musica
 			--romeo santos
-			https://www.youtube.com/results?q=romeo+santos&sp=EgIQAg%253D%253D
-				https://www.youtube.com/user/RomeoSantosGDL
-				https://www.youtube.com/channel/UClUYii2TOvkYAphe344DUsA
-				https://www.youtube.com/user/RobertCastroRC
-				https://www.youtube.com/user/romeosantositalyfans
-				https://www.youtube.com/channel/UCmzXaEN6nQCINFPy781wPsw
-				https://www.youtube.com/channel/UCezra-sVuPFkwyDEqf63ZDw
-				https://www.youtube.com/channel/UCTBVpATHnKDxYQidnQbPClA
-				https://www.youtube.com/channel/UCgTg2cEotje4FgTZXTBOidw
+
+			https://www.youtube.com/channel/UClUYii2TOvkYAphe344DUsA
+			https://www.youtube.com/channel/UCmzXaEN6nQCINFPy781wPsw
+			https://www.youtube.com/channel/UCezra-sVuPFkwyDEqf63ZDw
 
 
+
+                        https://www.youtube.com/channel/UCTBVpATHnKDxYQidnQbPClA    RosarioFilms
+                                97 videos       3) Published on Sep 12, 2017    54:23
+				-background music only
+				-entertainment
+                        https://www.youtube.com/user/RobertCastroRC    Yo Me Llamo Romeo Santos Oficial
+                                28 videos       6) Published on Feb 25, 2017    0:26
+				-courto clips
 			https://www.youtube.com/channel/UCi1KE9675WMhbUe9wJ-_WpQ    Romeo Santos live GN
 				    5) Published on Feb 23, 2017
 				-el vblog, uno video
@@ -675,44 +854,64 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
+			https://www.youtube.com/results?q=romeo+santos&sp=EgIQAg%253D%253D
 
 
 
+                        #https://www.youtube.com/user/romeosantositalyfans    romeosantos fansitalia    23 videos
+                        #https://www.youtube.com/channel/UCgTg2cEotje4FgTZXTBOidw    Fiesta Latina    4 videos
+                        #https://www.youtube.com/user/RomeoSantosGDL    Romeo Santos Guadalajara    26 videos
 
 
 		--news es
-		--noticioso	es
+		--noticioso es
+                        https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw    Todo Noticias
+                                4,194 videos    1) Published on Sep 13, 2017    8:03
+				-informal news
 			https://www.youtube.com/user/canalNTN24    NTN24
-				46,040 videos    2) Published on Apr 23, 2017
+                                48,599 videos   1) Published on Sep 12, 2017    8:01
 				-14min+
                         https://www.youtube.com/user/DeutscheWelleEspanol    DW (Español)
-                                17,118 videos   1) Published on Apr 26, 2017    2:46
+                               18,661 videos   1) Published on Sep 12, 2017    2:04
 				-automotive review news
+			https://www.youtube.com/user/canalugr    canalugr
+                                239 videos      1) Published on Sep 12, 2017    2:32
+				-noticioso
+				-daytime talk show?  like good morning america
 			https://www.youtube.com/user/24HORAS    24horas.cl
-				9,188 videos    1) Published on Apr 21, 2017
+                                11,612 videos   1) Published on Sep 5, 2017     4:09
 				-1min
+                        https://www.youtube.com/user/mundodesconocido    Mundo Desconocido
+                                926 videos      1) Published on Sep 4, 2017     12:35
+				-documentaries.  investigative reporting
+                        https://www.youtube.com/channel/UCIdngVyIe9UdXsfWvrXLFnw    PODEMOS ESPAÑA TV
+                                361 videos      1) Published on Sep 3, 2017     14:43
+                        https://www.youtube.com/user/teleamazonasecuador    Teleamazonas Ecuador
+                                18,783 videos   2) Published on Sep 4, 2017     2:03
+				//ecuador, south america
+                        https://www.youtube.com/user/24horasperu    24 Horas
+                                16,654 videos   1) Published on Sep 4, 2017     1:15
+				//peru, south america
+                        https://www.youtube.com/channel/UCYY0va5t-KZncOOctoGva7A    Ayuntamiento de Madrid
+                                668 videos      1) Published on Aug 31, 2017    0:47
+				-local news madrid
+                        https://www.youtube.com/user/canalmcu    Ministerio de Educación, Cultura y Deporte - Canal Cultura
+                                2,288 videos    11) Published on Jul 11, 2017   7:29
+				-documentaries
                         https://www.youtube.com/user/ActualidadRT    RT en Español
                                 30,261 videos   27) Published on Apr 25, 2017   1:59
-				-on 27th video?
-
-
+                        https://www.youtube.com/user/VicepresidenciaGobSP    Vicepresidencia del Gobierno de España
+                                160 videos      1) Published on Dec 22, 2015    3:11
+				-court clips de nouvelles 30s
 			https://www.youtube.com/user/24HorasPTV    24 Horas
 				26,499 videos    1) Published on Dec 4, 2015
 				//Panamericana Televisión
 				//south america?
-			https://www.youtube.com/user/24horasperu
-				//peru, south america
-			https://www.youtube.com/user/teleamazonasecuador		
-				//ecuador, south america
-
-
-			https://www.youtube.com/user/canalugr    canalugr
-				227 videos    1) Published on Apr 7, 2017
-				221 videos    1) Published on Sep 9, 2016
-				-noticioso
 
 
 
+
+			#https://www.youtube.com/user/canalmaectv
 			#https://www.youtube.com/user/rtve
 				-no subtitres
 			#https://www.youtube.com/user/cnnenespanolcom    CNN en Español
@@ -722,29 +921,59 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
+		--podcast es
+		--comedy es
+		--comedia es
+                        https://www.youtube.com/channel/UCN6OltXWeeeJTYXdPbotYMQ    MASTER KING BORICUA
+                                1,132 videos    1) Published on Sep 1, 2017     21:55
+				-bueno, variety show
+                        https://www.youtube.com/user/Luiginxer    Luiginxer
+                                53 videos       1) Published on Jul 6, 2017     20:22
+				-bueno
+				-No comedia, sólo hablando
+                        https://www.youtube.com/channel/UCLRbnb5jxP-x6OAN9m-3AOw    Chente Ydrach
+                                428 videos      1) Published on Sep 1, 2017     8:50
+				-malo audio, home vblog
+                        https://www.youtube.com/user/paulinhopr5    #Sessão Comédia 
+                                206 videos      5) Published on Aug 29, 2017    6:23
+				-malo sparodic videos
+                        https://www.youtube.com/user/podcastaristocratas    Aristocratas Podcast
+                                102 videos      1) Published on Nov 22, 2016    10:09
+				-viejo
+                        https://www.youtube.com/user/StandUpVenezuela    StandUp Espanol
+                                270 videos      1) Published on Aug 16, 2016    3:00
+				-bueno, audio only
+                        https://www.youtube.com/user/ComediaProductionsYT    ComediaProductionsYT
+                                        1) Streamed live on May 22, 2015        33:07
+				-malo
+                        https://www.youtube.com/user/ElClubchv    El Club de la Comedia CHV 
+                                1,300 videos    5) Published on Oct 6, 2014     0:25
+				-viejo
 
+			#https://www.youtube.com/user/misextatv
 
 
 		--entertainment es
+                        https://www.youtube.com/user/BricenoSemanal    Reporte Semanal con José Rafael Briceño
+                                175 videos      1) Published on Sep 4, 2017     3:00
+				-parece a daily show.   news comedy
 			https://www.youtube.com/channel/UC2MXy4PrVCDt9nduHrdPtuQ	Late Motiv
-                                1,112 videos    1) Published on May 2, 2017     5:12
+                                1,318 videos    1) Published on Sep 13, 2017    8:12
 			https://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw    #0
-				3,056 videos    2) Published on Mar 20, 2017
+                                4,083 videos    1) Published on Sep 4, 2017     1:14
 				-Cero Canal
-					-tiene late motiv y otro videos de canal Cero / #0
-						-Late Motiv reposted videos?   por que es mucho de originale?
-							-espectaculos llenos? no
-
-
+				-tiene late motiv y otro videos de canal Cero / #0
+				-Late Motiv reposted videos?   por que es mucho de originale?
+				-espectaculos llenos? no
 			https://www.youtube.com/channel/UCcrSw79VCd4sSguy9D2HufQ    Experience Endesa Tv
-				413 videos    4) Published on Mar 16, 2017
+                                563 videos      2) Published on Sep 3, 2017     1:06
 				-hombre talk show
 				-mucho tiempo	18-40min
 			https://www.youtube.com/user/cadenaser		cadenaser
-			        3,057 videos    3) Published on Mar 11, 2017
+                                3,255 videos    1) Published on Sep 1, 2017     2:58
 				-muher entrevistas
 			https://www.youtube.com/user/YUnotepierdasnada    Vodafone yu
-				4,393 videos    1) Published on Feb 8, 2017
+                                5,169 videos    1) Published on Aug 31, 2017    0:21
 				-groupo hablando espectaculos
 				-espectaculos tablero
 			https://www.youtube.com/user/ilustresignorantes    Ilustres Ignorantes
@@ -760,6 +989,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
+			#https://www.youtube.com/channel/UCxthdekpMin2DTv4i-3AjDg
 
 
 
@@ -767,8 +997,8 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
-		--physics
-		--fisica
+		--physics es
+		--fisica es
 			https://www.youtube.com/user/IFUNAM    IFUNAM
 			        398 videos    1) Streamed live on Feb 27, 2017
 				~52mins
@@ -783,7 +1013,8 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
-		--university
+		--university es
+
 			https://www.youtube.com/user/ucomplutensemadrid    Universidad Complutense de Madrid
 			        1,094 videos    13) Published on Feb 20, 2017
 				meme:  https://www.youtube.com/channel/UCjQQ05hXkKokuGULJRvxiUA	Universidad Complutense de Madrid
@@ -828,6 +1059,10 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 				-computer tutorials
 
 
+                        https://www.youtube.com/user/IBMEspana    IBM España
+                                507 videos      1) Published on Aug 25, 2017    1:02
+				-english
+
 
 
 
@@ -851,46 +1086,57 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 				https://en.wikipedia.org/wiki/List_of_universities_in_Spain
 
 
-		--government
-		--gobierno
+		--government es
+		--gobierno es
+
+                        https://www.youtube.com/channel/UCT3tvU3bVxOa3ZiVD-B7h9g    Congreso de los Diputados - Canal Parlamento
+                                695 videos      1) Streamed live on Sep 4, 2017 3:37:58
+				-Comisión de Asuntos Exteriores (04_09_2017)-Hw8GNiZorp4.3gp	122.52MiB
+			https://www.youtube.com/user/gobiernomorelos    Gobierno Morelos
+                                1,890 videos    1) Published on Sep 4, 2017     2:42
+			https://www.youtube.com/user/gobiernodecordoba    Gobierno de Córdoba
+				3,649 videos    1) Published on Feb 26, 2017
+			https://www.youtube.com/user/Docen3    Prensa Gobierno de Junín
+				3,584 videos    1) Published on Feb 26, 2017
+				-4mins
+			https://www.youtube.com/user/gobiernofederal    Gobierno de la República
+				6,616 videos    1) Published on Feb 25, 2017
+				-malo.  corto, un minuto
+				-mexico
+				-military 1h+
+			https://www.youtube.com/channel/UCJM0vXxotCWVHJCJJ1hBbqQ    Gobierno de San Juan
+				616 videos    2) Published on Feb 25, 2017
+				-2 mins
+			https://www.youtube.com/user/GobSantaFe    Gobierno de Santa Fe
+				3,017 videos    1) Published on Feb 24, 2017
+				-2mins
+			https://www.youtube.com/user/gobiernomiranda    Gobierno Miranda
+				1,074 videos    1) Published on Feb 24, 2017
+				-uno minuto advertisements
+			https://www.youtube.com/user/gobiernocoahuila    Gobierno de Coahuila
+				1,504 videos    1) Published on Feb 23, 2017
+				-discurso de podio
+			https://www.youtube.com/channel/UCJpTTamTMwx0b7zu12M5Y9Q    Gobierno de Jujuy
+				725 videos    1) Published on Feb 23, 2017
+			https://www.youtube.com/channel/UCxmxkkHOmCknPA6xMPP_otA    Gobierno de Sonora
+				309 videos    1) Published on Feb 8, 2017
+			https://www.youtube.com/user/GobiernodeGuatemala    Gobierno de Guatemala
+				2,466 videos    1) Published on Feb 7, 2017
+				-dictator, discurso de podio
+
+
+			https://www.youtube.com/results?q=gobierno+de&sp=EgIQAlAU
+
+
+
+
+
+			#https://www.youtube.com/user/el7desol
+			#https://www.youtube.com/user/gobiernosalta
+			#https://www.youtube.com/user/LAMONEDA
+
+
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=Gobierno
-				https://www.youtube.com/user/gobiernomorelos    Gobierno Morelos
-					1,484 videos    1) Published on Feb 26, 2017
-				https://www.youtube.com/user/gobiernodecordoba    Gobierno de Córdoba
-					3,649 videos    1) Published on Feb 26, 2017
-				https://www.youtube.com/user/Docen3    Prensa Gobierno de Junín
-					3,584 videos    1) Published on Feb 26, 2017
-					-4mins
-				https://www.youtube.com/user/gobiernofederal    Gobierno de la República
-					6,616 videos    1) Published on Feb 25, 2017
-					-malo.  corto, un minuto
-					-mexico
-				https://www.youtube.com/channel/UCJM0vXxotCWVHJCJJ1hBbqQ    Gobierno de San Juan
-					616 videos    2) Published on Feb 25, 2017
-					-2 mins
-				https://www.youtube.com/user/GobSantaFe    Gobierno de Santa Fe
-					3,017 videos    1) Published on Feb 24, 2017
-					-2mins
-				https://www.youtube.com/user/gobiernomiranda    Gobierno Miranda
-					1,074 videos    1) Published on Feb 24, 2017
-					-uno minuto advertisements
-				https://www.youtube.com/user/gobiernocoahuila    Gobierno de Coahuila
-				        1,504 videos    1) Published on Feb 23, 2017
-					-discurso de podio
-				https://www.youtube.com/channel/UCJpTTamTMwx0b7zu12M5Y9Q    Gobierno de Jujuy
-					725 videos    1) Published on Feb 23, 2017
-				https://www.youtube.com/channel/UCxmxkkHOmCknPA6xMPP_otA    Gobierno de Sonora
-					309 videos    1) Published on Feb 8, 2017
-				https://www.youtube.com/user/GobiernodeGuatemala    Gobierno de Guatemala
-					2,466 videos    1) Published on Feb 7, 2017
-					-dictator, discurso de podio
-
-
-
-				#https://www.youtube.com/user/gobiernosalta
-				#no https://www.youtube.com/user/LAMONEDA
-
-
 
 
 
@@ -915,7 +1161,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 	----fr       	 
 		Indo-European   French  français, langue française  
 
-		--rap
+		--rap fr
 			https://www.youtube.com/results?q=rap+france&sp=CAMSAhAC
 				https://www.youtube.com/user/DAYMOLITION    DAYMOLITION
 				        1,712 videos    2) Published on Feb 26, 2017
@@ -957,23 +1203,53 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 				#https://www.youtube.com/channel/UC7NbyfNPs3qd7k3gF_GCcSw
 
 
-
-		--entertainment
-		--divertisment
-			https://www.youtube.com/user/LGJofficiel	Le Grand Journal
+		--comedy fr
+		--comedie fr
+		--entertainment fr
+		--divertisment fr
+                        https://www.youtube.com/user/tf1    TF1
+                                        1) Published on Sep 6, 2017     0:26
 				-malo	subtitres no match pas avec le dialogue
-			https://www.youtube.com/channel/UC26vXhYofHiZDM2ar1zUuwQ	TF1
-				-malo	subtitres no match pas avec le dialogue
-			https://www.youtube.com/channel/UCpi-4daExRSchtsJzO06rwA	Quotidien
+				https://www.youtube.com/channel/UC26vXhYofHiZDM2ar1zUuwQ	TF1
+                        https://www.youtube.com/user/TVA    TVA
+                                1,464 videos    1) Published on Aug 31, 2017    1:57
+                        https://www.youtube.com/user/tribuv    Vtele
+                                128 videos      1) Published on Aug 21, 2017    0:18
+                        https://www.youtube.com/channel/UCpi-4daExRSchtsJzO06rwA    Quotidien
+                                233 videos      1) Published on Jul 7, 2017     7:24
 				-subtitres ok, mais pas bien
-			https://www.youtube.com/channel/UCTKTXsGuEF5-qmqLV4eSe0g	C'est Canteloup
+                        https://www.youtube.com/user/canalplusfrance    CANAL+
+                                354 videos      1) Published on Jun 29, 2017    1:26
+                        https://www.youtube.com/user/festivalgrandrire    ComediHa!
+                                        2) Published on Jun 21, 2017    2:29
+                        https://www.youtube.com/user/RadioCanada    Radio-Canada
+                                2,890 videos    1) Streamed live on Jun 20, 2017        59:10
+                        https://www.youtube.com/channel/UCTKTXsGuEF5-qmqLV4eSe0g    C&#39;est Canteloup
+                                216 videos      1) Published on Jun 6, 2017     1:04
+				-C'est Canteloup
 				-bueno le meilleur
+                        https://www.youtube.com/channel/UCbqX8QIpXoxZJbNiizgm-UA    Chloée DB
+                                74 videos       1) Published on Apr 3, 2017     5:14
+                        https://www.youtube.com/user/LGJofficiel    Le Grand Journal
+                                        2) Published on Mar 5, 2017     1:42
+				-malo	subtitres no match pas avec le dialogue
+                        https://www.youtube.com/channel/UC3I7N8tzeEqCXT4IwOkItUA    Jim Calder
+                                149 videos      1) Published on Mar 27, 2016    15:23
+                        https://www.youtube.com/channel/UCwM_pCjfGNuSZYZnKyxd3jQ    Le Dan Late Show
+                                832 videos      1) Published on May 29, 2016    4:23
+                        https://www.youtube.com/channel/UCnfKmlGuC_d-2vo9w9KLHsg    La Fin du mond
+e est à 7 heures - Topic
+                                        1) Published on Sep 1, 2012     2:16
 
 			# https://www.youtube.com/user/onpcofficielle	On n'est pas couché
 				n'a pas de tranduction
 
 		--news fr
-		--nouvelle	fr
+		--nouvelle fr
+                        https://www.youtube.com/user/lexpress    L&#39;Express
+                                5,336 videos    1) Published on Sep 6, 2017     2:09
+                        https://www.youtube.com/user/ChefPhileas1    ChefPhileas1
+                                1,851 videos    1) Published on Sep 5, 2017     2:33
 			https://www.youtube.com/user/itele    CNEWS
 				15,331 videos    2) Published on Apr 19, 2017
 				-bon, 15mins+
@@ -1019,7 +1295,8 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 			https://en.wikipedia.org/wiki/International_news_channels#Europe
 
-		--universite
+		--universite fr
+		--university fr
 			https://www.youtube.com/channel/UCr9QpvmJWcy9exV6ashQ0nA	Chaîne IPGP
 				-bien
 			https://www.youtube.com/user/WebmestreCDF	Collège de France
@@ -1109,7 +1386,9 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 		--government it
 		--governo it
-			https://www.youtube.com/user/governoit
+                        https://www.youtube.com/user/governoit    Palazzo Chigi 
+                                1,970 videos    1) Published on Aug 28, 2017    1:29:36
+
 
 
 
@@ -1117,13 +1396,12 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 		--news it
 
+                        https://www.youtube.com/user/AnticipazioniTV    AnticipazioniTV
+                                1,649 videos    1) Published on Sep 5, 2017     3:59
+				-news?
                         https://www.youtube.com/user/FIB1991    Federazione Italiana Bocce
                                 269 videos      2) Published on Apr 26, 2017    1:22
 				-news
-                        https://www.youtube.com/user/AnticipazioniTV    AnticipazioniTV
-                                1,555 videos    1) Published on May 18, 2017    1:11
-				-news?
-
                         https://www.youtube.com/user/Amica9tv    Amica9tv
                                 25,256 videos   1) Published on Apr 28, 2017    1:15
 				-video e parlando
@@ -1241,7 +1519,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 	----pt       
 		Indo-European   Portuguese      Português    
-		--rap
+		--rap pt
 			https://www.youtube.com/results?q=M%C3%BAsica+rap&sp=EgIQAg%253D%253D
 				https://www.youtube.com/user/SergioRapBrasilia    Rap Brasília OFFICIAL
 					501 videos    10) Published on Jan 31, 2017
@@ -1285,6 +1563,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
                         https://www.youtube.com/user/RecordNewsES    Record News ES
                                 4,726 videos    2) Published on May 26, 2017    25:47
 				-news
+				-portugues.  meme si ES, pas espanol
                         https://www.youtube.com/channel/UCuiLR4p6wQ3xLEm15pEn1Xw    Record News
                                 2,936 videos    1) Published on May 26, 2017    4:23
 				-daytime show
@@ -1333,12 +1612,23 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 			#https://www.youtube.com/user/RTPPROMOS
 
 
+		--podcast pt
+		--comedy pt
+		--comedia pt
+		--comédia pt
+			https://www.youtube.com/user/MrBrunoCirino
+			https://www.youtube.com/channel/UChXr2PvGEyDVNkD59M4gpcg
+			https://www.youtube.com/user/comediad4
 
+                        https://www.youtube.com/channel/UCszKOb2RQUntnv5w2DA7jbQ    Sobre Comédia
+                                3 videos        2) Published on May 31, 2015    55:28
+				-viejo, bueno audio
 
 		--entertainment pt
                         https://www.youtube.com/channel/UCd-P95WFOH6aK3z3apWgISQ    Programa do Porchat
                                 1,354 videos    1) Published on May 26, 2017    2:52
 				-late night talk show
+
                         https://www.youtube.com/user/portadosfundos    Porta dos Fundos
                                 697 videos      1) Published on May 25, 2017    2:19
 				-entrevista live
@@ -1389,6 +1679,215 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 		Indo-European   Galician        galego
 	----ro        
 		Indo-European   Romanian        Română 
+		--rap ro
+
+			https://www.youtube.com/channel/UCx3q4j8xN_AfBJ4dM1EjC0g
+			https://www.youtube.com/channel/UCO2KmTBXB2k-9dVdudXJOyQ
+			https://www.youtube.com/channel/UCARnh8i-XSPkwAoB2QAjkvw
+
+			https://www.youtube.com/user/APLUSTVROMANIA
+				anime?
+
+			https://www.youtube.com/channel/UCJR3tGeMirNuZhxG1T634EA
+			https://www.youtube.com/user/JunkyFried
+			https://www.youtube.com/channel/UCGCXdNxDCtWLzWaXUDJ8LWw
+			https://www.youtube.com/channel/UC1XcC-d6M0gqwQ34DtgsO9Q
+			https://www.youtube.com/channel/UCHAtgBfS-RDDmoEhayHYIFw
+			https://www.youtube.com/user/sperantza29
+			https://www.youtube.com/user/sergiuok
+
+			https://www.youtube.com/channel/UCgZg_fV_2LA12TPMipZSusw
+			https://www.youtube.com/user/RappuTM
+			https://www.youtube.com/user/MrLiderul
+			https://www.youtube.com/user/vladmunteanu2
+			https://www.youtube.com/user/videozufm
+
+
+
+
+
+
+                        https://www.youtube.com/channel/UCs_PkS9AJm1_IM0RUGT3VTg    TigerTeoXD
+                                17 videos       9) Published on May 1, 2016     1:51
+				-rap
+                        https://www.youtube.com/user/ShukaRMusic    MADE IN ROMANIA TV
+                                15 videos       6) Published on Mar 23, 2016    1:15
+				-vblog
+
+
+
+                        #https://www.youtube.com/user/nekmusicproduction    Nek Music Tv    1,072 videos
+                        #https://www.youtube.com/user/RotonMusicTV    RotonMusicTV    1,243 videos
+
+
+
+			https://www.youtube.com/results?search_query=Rap-ul+%28numit+%C8%99i+MCing%29+const%C4%83+%C3%AEn+rostirea+de+rime+%2C+jocuri+de+cuvinte+sau+poezie+%C3%AEntr-un+mod+ritmic.
+
+
+
+
+
+
+		--news ro
+                        https://www.youtube.com/user/antena3rtp    Antena 3
+                                1,347 videos    1) Published on Sep 21, 2017    5:02
+				-musik documentary
+                        https://www.youtube.com/channel/UCwed4UuxvfcGcxJrUNgALQA    Tv Romania
+                                880 videos      2) Published on Sep 19, 2017    2:40
+				-bueno, entertainment news romania
+                        https://www.youtube.com/user/ArhivaTVRonline    arhiva TVR
+                                929 videos      10) Published on Sep 11, 2017   1:28
+				-black & white
+                        https://www.youtube.com/channel/UCHnoLOHhoQgOgIdydhOI8Tw    TV JURNAL
+                                239 videos      7) Published on Apr 29, 2017    5:38
+				-news
+                        https://www.youtube.com/user/PrimaTVoficial    PrimaTV Romania
+                                344 videos      10) Published on Jun 7, 2017    0:45
+				-francais
+                        https://www.youtube.com/user/JurnalTVMoldova    JurnalTV
+                                303 videos      10) Published on May 1, 2017    9:28
+				-news
+                        https://www.youtube.com/user/theduckshooow    The Duck Show
+                                282 videos      1) Published on Apr 12, 2017    4:51
+				-ro, amateur entertainment news
+                        https://www.youtube.com/channel/UCvZXpNeQy7XLq139rT2LafQ    Partidul Miscarea Populara
+                                313 videos      28) Published on Apr 3, 2017    6:57
+				-politician?
+                        https://www.youtube.com/user/TheDigiVideo    Digi Romania
+                                560 videos      1) Published on Mar 31, 2017    0:25
+				-cultural tv show
+                        https://www.youtube.com/user/TVRStirileOnline    Stirile TVR Online
+                                209 videos      2) Published on Jun 11, 2017    0:36
+                        https://www.youtube.com/channel/UCyzy387DwhFqle2NSaonUdw    Realitatea Moldova
+                                2,237 videos    5) Published on Apr 20, 2017    0:27
+                        https://www.youtube.com/channel/UCLqoOjrLQBtXKsyIbwRJoog    Emisiune Ambasador Romania
+                                270 videos      25) Published on Apr 13, 2017   0:32
+				-commercials
+                        https://www.youtube.com/channel/UCvZXpNeQy7XLq139rT2LafQ    Partidul Miscarea Populara
+                                313 videos      28) Published on Apr 3, 2017    6:57
+                        https://www.youtube.com/channel/UC1Fe7S5PZLJWltku7coUyIQ    TVR1 - Topic
+                                        5) Published on Feb 2, 2017     0:54
+				-old tv shows
+                        https://www.youtube.com/user/JurnalTV    Jurnal TV
+                                1,726 videos    3) Published on Oct 24, 2016    23:32
+				https://ro.wikipedia.org/wiki/Jurnal_TV
+                        https://www.youtube.com/user/AnatolMelnicXti    Anatol Melnic
+                                369 videos      3) Published on Feb 15, 2016    5:55
+                        https://www.youtube.com/user/Atitudini    Atitudini
+                                152 videos      9) Published on Oct 13, 2016    5:11
+                        https://www.youtube.com/channel/UCYeW8V-ZorUMJ0Qhfw8QPaQ    JurnalFM
+                                28 videos       27) Published on Nov 20, 2015
+                        https://www.youtube.com/channel/UCcnsS6Ngmfmtm-PUoj8JA8A    Digi24 HD Stiri
+                                5 videos        1) Published on Jul 22, 2015    2:21
+                        https://www.youtube.com/channel/UCVhDZupUrKI8rECh9omx6DA    Știri din Moldova
+                                324 videos      7) Published on Jul 19, 2015    1:45
+				-news, old
+                        https://www.youtube.com/user/patrulajtv    Patrula JurnalTV
+                                32 videos       2) Published on Jul 2, 2014     5:37
+                        https://www.youtube.com/user/andreeavioleta2009    Andreea Marin
+                                261 videos      6) Published on Jun 27, 2014    1:23
+                        https://www.youtube.com/user/digi24hd    Digi24 HD
+                                37 videos       2) Published on Aug 12, 2013    0:53
+				https://ro.wikipedia.org/wiki/Digi_24
+                        https://www.youtube.com/user/IstorieAdevarataTV    IstorieAdevarataTV
+                                168 videos      9) Published on Dec 26, 2010    23:03
+                        https://www.youtube.com/user/laninashrek    laninashrek
+                                37 videos       2) Published on Jun 4, 2009     10:58
+				-talk show
+
+
+
+
+
+
+                        https://www.youtube.com/channel/UCVKvVRE2IC4T0TAEKzVuIPQ    Cantus Mundi
+                                43 videos       15) Published on Sep 20, 2017   1:07
+				-has english
+                        https://www.youtube.com/channel/UCURa2HB2So0g5L4G2CwbCUw    João Ramos Pereira
+                                2 videos        1) Published on Sep 20, 2017    5:02
+                        https://www.youtube.com/user/Kler2107    2107 / La Caja Tonta 1
+                                1,685 videos    1) Published on Sep 22, 2017    2:56
+				-espanol?
+                        https://www.youtube.com/user/c5n    c5n
+                                100,518 videos  1) Published on Sep 22, 2017    4:36
+				-espanol?
+                        https://www.youtube.com/user/sirjohnpenguin2    sirjohnpenguin2
+                                537 videos      1) Published on Sep 21, 2017    52:29
+				-espanol?
+                        https://www.youtube.com/user/informesTVR    Informes TVR
+                                4,640 videos    1) Published on Sep 17, 2017    9:15
+				-espanol?
+                        https://www.youtube.com/channel/UCk05pSEmNMs2PhtbISGgM6g    Tomas Valle Runners
+                                22 videos       21) Published on May 27, 2017   1:07
+				-espanol? vblog
+                        https://www.youtube.com/channel/UCPWlZm1qPU9LFrI2fUCD4ww    Alberto Canosa Videos De Respaldo
+                                290 videos      1) Published on Sep 21, 2017    16:33
+				-espanol? vblog
+                        https://www.youtube.com/channel/UCOo9zf2EBJrjwORJgsPMwFw    Ospina abogados
+                                23 videos       1) Published on Sep 20, 2017    0:27
+				-espanol? vblog
+                        https://www.youtube.com/channel/UCqvFZ9UnhTfVf-utPtQar6Q    Inptv 00t
+                                24 videos       2) Published on Sep 20, 2017    0:11
+				-espanol
+
+
+
+
+                        https://www.youtube.com/user/gimisful    Mihail Georgevici
+                                807 videos      47) Published on Jun 5, 2017    105 seconds.
+				-italiano?
+                        https://www.youtube.com/user/RwandanTV    RTV
+                                1,616 videos    2) Published on Sep 21, 2017    4:17
+				-african language
+                        https://www.youtube.com/channel/UCshOKIZnjOB-rVpAy8MEC1w    Actual TV RO
+                                81 videos       33) Published on Sep 16, 2017   30 seconds.
+				-english
+                        https://www.youtube.com/user/Yeslavot    Canal
+                                1,060 videos    50) Published on Jun 6, 2017    31 seconds.
+				-english, but romanian news
+                        https://www.youtube.com/user/barbuconstantin1    Constantin Barbu
+                                19 videos       15) Published on Apr 24, 2011   6:19
+				-installation
+
+
+
+
+                        #https://www.youtube.com/user/sirjohndigweed    sirjohndigweed    608 videos
+                        #https://www.youtube.com/channel/UCsTdYJx0LTZBQO0vWZBQ4BA    REPLAY    72 videos
+                        #https://www.youtube.com/channel/UCd8TldRmnyYFlliYRy6fkTw    ROMANIA TV    816 videos
+                        #https://www.youtube.com/channel/UClT-7kteJ07KsKJL_u9-0EQ    Romania TV    865 videos
+                        #https://www.youtube.com/channel/UCs252x-0ho8IRusXqv8AR9w    Reperul - Live    198 videos
+                        #https://www.youtube.com/channel/UCTygzhbs9kwObGSiZiv9i6A    Realitatea Oltului    2,629 videos
+                        #https://www.youtube.com/user/realitateamures    Realitatea Targu Mures    433 videos
+                        #https://www.youtube.com/channel/UCf-dxGHZ7N1lnTpE8L13ocA    Headlines    75 videos
+                        #https://www.youtube.com/channel/UCsi0NU-8riP1ln4YcFDRAqw    Mr. Vertigo NEWS    40 videos
+                        #https://www.youtube.com/channel/UC8l1xFD_93mYZh4wf0xXj-Q    Romania-News    198 videos
+                        #https://www.youtube.com/channel/UCshOKIZnjOB-rVpAy8MEC1w    Actual TV RO    79 videos
+                        #https://www.youtube.com/channel/UChb_iFeWK-4NzLfcqFwcFvw    jurnal de reghin    18,367 videos
+                        #https://www.youtube.com/channel/UCm5clG3M4Y6LFpnFvDKqpQA    Televiziunea Arad    2,045 videos
+                        #https://www.youtube.com/channel/UCDGImBXn_0xWQXlihMwFinQ    ฐนกร ใหญ่ยยิ่ง    1,737 videos
+                        #https://www.youtube.com/user/StareaNatiei    Starea Natiei Oficial    4,357 videos
+                        #https://www.youtube.com/channel/UC6Do75nek1E9sWo_r6iFa8Q    RADU BANCIU vs CTP - CRISTIAN TUDOR POPESCU    2 videos
+                        #https://www.youtube.com/channel/UCUvhkAUFjHUOUL6IIwcphZg    MIRCEA BADEA   317 videos
+                        #https://www.youtube.com/channel/UCteyrOgRZxJWWm-gSdWuKLg    Supernova    99 videos
+                        #https://www.youtube.com/user/PublikaMD    PublikaMD    5,292 videos
+                        #https://www.youtube.com/user/antena3ro    Antena 3    1,944 videos
+                        #https://www.youtube.com/user/antena3noticias    Antena 3 Noticias    6,321 videos
+                        #https://www.youtube.com/user/antena3canarias    Antena 3 Canarias    13,353 videos
+                        #https://www.youtube.com/user/antena3    Antena 3    15,858 videos
+				https://ro.wikipedia.org/wiki/Antena_3
+                        #https://www.youtube.com/user/TVRcanaluloficial    TVR    12,890 videos
+				https://ro.wikipedia.org/wiki/TVR_1
+                        #https://www.youtube.com/user/B1TVChannel    B1TVChannel    17,094 videos
+                        #https://www.youtube.com/user/realitatea    REALITATEA.NET    4,267 videos
+				https://ro.wikipedia.org/wiki/Realitatea_TV
+
+		--government ro
+		--university ro
+		--physics ro
+		--entertainment ro
+		--comedy ro
+		--kids ro
 	----la       
 		Indo-European 	Latin 	latine, lingua latina 	la 	lat 	lat 	lat 	lats 	ancient
 
@@ -1400,6 +1899,30 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 	----nl      
 		Indo-European 	Dutch 	Nederlands, Vlaams 	nl 	nld 	dut 	nld 		
+		--rap nl
+			https://www.youtube.com/channel/UCwmXo810jlSkLJMxWOGpLBg
+
+					https://www.youtube.com/results?search_query=De+term+rappen+%28ook+gebruikt+als+emceeing%2C+MC-ing%2C+spitting%2C+of+simpelweg+rijmen%29+verwijst+naar+het+op+een+ritmische+wijze+zingen+van+een+%28rijmende%29+tekst.
+
+		--komedie nl
+		--comedy nl
+			https://www.youtube.com/user/Dylanhaegens
+			https://www.youtube.com/user/gremman2
+			https://www.youtube.com/channel/UC_fZnVq2fYM4SBDsVHroukw
+			https://www.youtube.com/user/de25nl
+			https://www.youtube.com/user/omroepbrabant
+			https://www.youtube.com/channel/UCHTtspK-G7Wt68awRpTSkiw
+
+                        https://www.youtube.com/user/hier684    Woutuhr
+                                8 videos        2) Published on May 30, 2013    5:41
+
+
+
+
+
+			https://nl.wikipedia.org/wiki/Komedie
+			https://www.youtube.com/results?search_query=Een+komedie%2C+ook+blijspel+genoemd%2C+is+een+theaterstuk%2C+film%2C+televisieprogramma+of+boek+met+het+doel+het+publiek+te+amuseren+en+de+kijkers+aan+het+lachen+te+maken.
+
 
 
 		--news nl
@@ -1475,7 +1998,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 	----af      
 		Indo-European 	Afrikaans 	Afrikaans 	af 	afr 	afr 	afr 	afrs 	
 
-		--rap
+		--rap af
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=Kletsrym+rap
 			https://www.youtube.com/results?search_query=Kletsrym+rap
 				https://www.youtube.com/user/pendoringawards    Pendoring Awards
@@ -1487,6 +2010,16 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 				#https://www.youtube.com/user/kanaalMK   MK South African Youth Music Channel
 					2,096 videos
 				#https://www.youtube.com/channel/UChcI-kmyTeqEjHZ7SVWsjmw
+
+
+
+
+		--entertainment af
+			https://www.youtube.com/user/UIPSouthAfrica
+
+
+
+
 
 		--news af
 			https://www.youtube.com/user/Netwerk24Video    Netwerk24 Video
@@ -1500,11 +2033,39 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 				7 videos    3) Published on Jan 8, 2014
 
 
+
 	----da       
 		Indo-European 	Danish 	dansk 	da 	dan 	dan 	dan 		
 
 
+		--komedie da
+		--comedy da
+
+			https://www.youtube.com/user/maria18305
+			https://www.youtube.com/channel/UCyhSleU6h1qJAb-Sij8-TYw
+			https://www.youtube.com/channel/UCyhSleU6h1qJAb-Sij8-TYw
+			https://www.youtube.com/user/yalihorde
+			https://www.youtube.com/user/Seeatre
+			https://www.youtube.com/channel/UC5OUS3fd78NF2HyF9_ZntEw
+			https://www.youtube.com/channel/UCxmP9_QrNz69Sc_G1osvy2Q
+			https://www.youtube.com/user/stigmo87
+			https://www.youtube.com/channel/UCJ_lfigIFid4wuECwP-xIdw
+			https://www.youtube.com/user/umbno
+			https://www.youtube.com/channel/UCDmHvuR6js92D6TjLr8qf_Q
+
+
+			https://da.wikipedia.org/wiki/Komedie
+			https://www.youtube.com/results?search_query=Komedie+er+en+betegnelse+for+morsomme+teaterstykker+og+film.
+
+
+
 		--news da
+
+
+
+
+
+
 
 	----fy       
 		Indo-European 	Western Frisian 	Frysk 	fy 	fry 	fry 	fry 		
@@ -1521,55 +2082,65 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 	----ru       
 		Indo-European   Russian         Русский   
 
-		--rap
+		--rap ru
+                        https://www.youtube.com/user/berseabod    Русский рэп 2017
+                                712 videos      1) Published on Aug 16, 2017    4:46
+				//rap, pero no video
+				-gut audio
+			https://www.youtube.com/channel/UCVras1TznbDjbeHIL-E0-rA    Рэп Завод
+				349 videos    1) Published on Apr 12, 2017
+				//bueno
+			https://www.youtube.com/user/KosmicheskiyMax    VSRAP Digest
+				163 videos    1) Published on Feb 7, 2017
+				-rap hablando / commentary
+			https://www.youtube.com/channel/UCjZYwvyRKS4TYl21Az_G67w    СЛАВЯНСКИЙ РЭП
+				143 videos    4) Published on Mar 28, 2016
+				-!bueno, canciones
+			https://www.youtube.com/user/TheRiznivideozYoutub
+				//rap, pas de video
+			https://www.youtube.com/channel/UCEzWlIgjhLb3jj6bQflHviw
+			https://www.youtube.com/channel/UCBmxKIkP7B_yM1mlkZ176vQ
+			https://www.youtube.com/user/TheAnimerap
+				-anime rap
+			https://www.youtube.com/channel/UCsQlcirDxM7kbeU4EEOCisQ
+			https://www.youtube.com/user/perspekt25
+
+			https://www.youtube.com/user/RAPKINOOBZOR
+				//solo hablando
+			https://www.youtube.com/channel/UCK5pARmy9pU-_f_Vl2Nairw
+				//seulement parler
+
+
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=%D0%A0%D1%8D%D0%BF
-				https://www.youtube.com/channel/UCVras1TznbDjbeHIL-E0-rA    Рэп Завод
-					349 videos    1) Published on Apr 12, 2017
-					//bueno
-				https://www.youtube.com/user/KosmicheskiyMax    VSRAP Digest
-					163 videos    1) Published on Feb 7, 2017
-					-rap hablando / commentary
-				https://www.youtube.com/channel/UCjZYwvyRKS4TYl21Az_G67w    СЛАВЯНСКИЙ РЭП
-					143 videos    4) Published on Mar 28, 2016
-					-!bueno, canciones
-				https://www.youtube.com/user/berseabod
-					//rap, pero no video
-				https://www.youtube.com/user/TheRiznivideozYoutub
-					//rap, pas de video
-				https://www.youtube.com/channel/UCEzWlIgjhLb3jj6bQflHviw
-				https://www.youtube.com/channel/UCBmxKIkP7B_yM1mlkZ176vQ
-				https://www.youtube.com/user/TheAnimerap
-					-anime rap
-				https://www.youtube.com/channel/UCsQlcirDxM7kbeU4EEOCisQ
-				https://www.youtube.com/user/perspekt25
-
-				https://www.youtube.com/user/RAPKINOOBZOR
-					//solo hablando
-				https://www.youtube.com/channel/UCK5pARmy9pU-_f_Vl2Nairw
-					//seulement parler
 
 
-			--battle rap
+
+
+
+		--battle rap
+			https://www.youtube.com/channel/UCCS9Ub2LWKcLyo9-66Rt76Q    Russian Battle Rap
+				289 videos    1) Published on Feb 8, 2017
+				-gut, 10 mins
+			https://www.youtube.com/user/versusbattleru    versusbattleru
+				149 videos    1) Published on Feb 5, 2017
+				-long 18+ mins, 30mins
+			https://www.youtube.com/channel/UC2QU-3V_Lbla_szC1KSeM2Q    Minsk Independent Battle
+				8 videos    2) Published on Jan 17, 2017
+				-long 26+ mins
+			https://www.youtube.com/user/AniMIXRapBattle    [ARB] АНИМЕ РЭП БАТТЛЫ
+				24 videos    1) Published on Apr 15, 2016
+				-anime rap
+			https://www.youtube.com/user/StreetBattleMD    STREET BATTLE MOLDOVA
+				30 videos    1) Published on Jun 10, 2015
+				-long 17-25mins
+				http://vk.com/streetbattlemd
+			https://www.youtube.com/user/SLOVOproject    SLOVOproject
+				712 videos    2) Published on Feb 1, 2017
+				-30 mins
+
+
 			https://www.youtube.com/results?q=%D0%A0%D1%8D%D0%BF-%D0%B1%D0%B0%D1%82%D1%82%D0%BB&sp=EgIQAg%253D%253D
-				https://www.youtube.com/channel/UCCS9Ub2LWKcLyo9-66Rt76Q    Russian Battle Rap
-					289 videos    1) Published on Feb 8, 2017
-					-gut, 10 mins
-				https://www.youtube.com/user/versusbattleru    versusbattleru
-					149 videos    1) Published on Feb 5, 2017
-					-long 18+ mins, 30mins
-				https://www.youtube.com/channel/UC2QU-3V_Lbla_szC1KSeM2Q    Minsk Independent Battle
-					8 videos    2) Published on Jan 17, 2017
-					-long 26+ mins
-				https://www.youtube.com/user/AniMIXRapBattle    [ARB] АНИМЕ РЭП БАТТЛЫ
-					24 videos    1) Published on Apr 15, 2016
-					-anime rap
-				https://www.youtube.com/user/StreetBattleMD    STREET BATTLE MOLDOVA
-					30 videos    1) Published on Jun 10, 2015
-					-long 17-25mins
-					http://vk.com/streetbattlemd
-				https://www.youtube.com/user/SLOVOproject    SLOVOproject
-					712 videos    2) Published on Feb 1, 2017
-					-30 mins
+
 
 
 		--news ru
@@ -1632,11 +2203,45 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
+		--podcast ru
+		--comedy ru
+		--Комедия ru
+			https://www.youtube.com/channel/UCcbZomHiXMLn5B2cPKcB3zg
+			https://www.youtube.com/channel/UCZAbSStbHk0mfx90k_SWKbg
+			https://www.youtube.com/channel/UCAf8J7YUzxONEBpR2wE-CkA
+			https://www.youtube.com/channel/UCYjRwYB8E25WXq4FU1ajpXw
+			https://www.youtube.com/channel/UC3LkAnzpek9OsrJcS_Ier1w
+			https://www.youtube.com/channel/UCR8_27XsVoACG2Miey3fQtQ
+			https://www.youtube.com/channel/UCG8cBSK0X3FQA_M0NQbpcQA
+			https://www.youtube.com/channel/UC96QGXL8nLQlsF4VsSFfChA
+			https://www.youtube.com/channel/UCR4ZKJH-Cauo8vxmGmDW08Q
+			https://www.youtube.com/channel/UCD1eAssEzGN69dTphiFUuHw
+			https://www.youtube.com/channel/UChYZA80awrUS7enn0mDnGEg
+			https://www.youtube.com/channel/UCroD-uz_PbOtyxIehM_ocwA
+			https://www.youtube.com/channel/UCZ1qUe7_A2GbeNu9yPWHcrA
+			https://www.youtube.com/channel/UCGtGYpQg1w6mqcyH8wRHbRQ
+
+                        https://www.youtube.com/user/TheBadComedian    BadComedian
+                                160 videos      1) Published on Aug 17, 2017    25:37
+				-gut, amateur
+
+
+
 		--entertainment ru
-			https://www.youtube.com/user/1tv    Первый канал
-				5,095 videos    1) Published on Apr 19, 2017
+                        https://www.youtube.com/user/M1GlobalRussia    M-1 Global
+                                1,792 videos    2) Published on Jul 5, 2017     0:39
+				-mma russia
+				https://en.wikipedia.org/wiki/M-1_Global
+				https://ru.wikipedia.org/wiki/M-1_Global
+
 			https://www.youtube.com/user/Urgantshow    Вечерний Ургант
+	        		https://www.youtube.com/channel/UCzlzGhKI5Y1LIeDJI53cWjQ                Вечерний Ургант
 				4,067 videos    2) Published on Apr 7, 2017
+				-late night talk show
+
+			https://www.youtube.com/user/1tv    Первый канал
+                                5,230 videos    2) Published on Jul 14, 2017    3:15
+				-entertainment news
 			https://www.youtube.com/user/tochvtoch1tv    Точь-в-точь
 				885 videos    1) Published on Jan 23, 2017
 
@@ -1655,7 +2260,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
-		--kids
+		--kids ru
                 https://www.youtube.com/user/MashaMedvedTV
 			--ru
 	                	https://www.youtube.com/user/MashaMedvedTV	Маша и Медведь
@@ -1698,7 +2303,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 	----uk       
 		Indo-European 	Ukrainian 	Українська 	uk 	ukr 	ukr 	ukr 		
 
-		--rap
+		--rap uk
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=rap+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0
 				https://www.youtube.com/user/Funky777Soul    Ukrainian Rap
 					744 videos    1) Published on Feb 5, 2017
@@ -1717,7 +2322,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 	----hi       	 
 		Indo-European   Hindi   हिन्दी, हिंदी       
 
-		--rap
+		--rap hi
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=%E0%A4%B0%E0%A5%88%E0%A4%AA
 				https://www.youtube.com/channel/UCEmsDnhpqGt8A8U9VsfM7QQ    पवन फरैणीया
 					18 videos    5) Published on NOV 11, 2016
@@ -1762,7 +2367,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 				34 videos    1) Published on Jan 31, 2017
 				-vblog
 
-		--university
+		--university hi
 			https://www.youtube.com/user/nptelhrd    nptelhrd
 				19,809 videos    2) Published on Dec 29, 2016
 
@@ -1800,7 +2405,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 		si       vtt, ttml                   
 			Indo-European 	Sinhalese, Sinhala 	සිංහල 	si 	sin 	sin 	sin 		
 
-		--rap
+		--rap si
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=%E0%B7%83%E0%B7%92%E0%B6%82%E0%B7%84%E0%B6%BD+%E0%B6%B7%E0%B7%8F%E0%B7%82%E0%B7%8F%E0%B7%80
 
 				https://www.youtube.com/channel/UCjtOoORvrPEFz3SbxiO8D-Q    Felipe Curran
@@ -1845,8 +2450,204 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 	----fa       
 		Indo-European 	Persian (Farsi) 	فارسی	fa 	fas 	per 	fas + 2 		macrolanguage
+
+		--rap fa
+			https://www.youtube.com/channel/UCQbYpd6H1ECLnB2vY1Q0fxQ
+			https://www.youtube.com/channel/UCd4h_QgGMTiTB3YFYczzIUw
+			https://www.youtube.com/channel/UCQhw-CwVhy6D_4qbk-J_tLw
+			https://www.youtube.com/channel/UCT4_pYaZupJXTLyPJQy6HVw
+			https://www.youtube.com/channel/UCyQZzSbee_bX7CRRapfVjuA
+			https://www.youtube.com/channel/UC-4KZCaeLLEOqEvNpEMziYQ
+			https://www.youtube.com/channel/UC82TRk7kwA8TcvvyNu5-qoQ
+			https://www.youtube.com/channel/UC7SqkOsmlr50nsUfpO4wenA
+
+
+
+
+                        https://www.youtube.com/channel/UCrXG6pofD87PW6tlfnJZTyA    Best of Persia
+n Rap
+                                56 videos       49) Published on Sep 10, 2017   4 minutes, 34 seco
+nds.
+				-bueno rap farsi
+                        https://www.youtube.com/channel/UCSh0de291v35gpBvfUZF5pw    iranian funny
+clips
+                                895 videos      9) Published on Sep 13, 2017    0:47
+				-vblog?
+                        https://www.youtube.com/channel/UCkJTq26bP0fQ__21dRJ9dWQ    PopCorn
+                                        13) Published on Sep 12, 2017   1:12
+				-vblog
+                        https://www.youtube.com/channel/UCGdsr8x9B1xTMne1UYiRQKA    Rock and Road
+                                151 videos      4) Published on Sep 12, 2017    35:14
+				-film
+                        https://www.youtube.com/channel/UCbnqCxhZA7XhcFyOvTxtubw    Yakhmak
+                                33 videos       8) Published on Jul 17, 2017    17:33
+				-video gaming
+                        https://www.youtube.com/channel/UC6Vlt1AIEIa6XYz4tKO725Q    streetrap حمای
+ت کنید دوستان رپ دری رو
+                                25 videos       1) Published on Jun 9, 2017     1:09:04
+				-amateur life video recording
+
+
+
+
+
+                        #https://www.youtube.com/channel/UCV18q2r2Hp-MH9n4919hG8A    Farsi TV    91 videos
+                        #https://www.youtube.com/channel/UC2brM4tEoKkTmWxbtgy-dAA    an ti    4 vi
+                        #https://www.youtube.com/channel/UCV6PDUQVKq-oaLLkvoN36ZA    Ali Ahmadvand
+                        #https://www.youtube.com/channel/UC7SqkOsmlr50nsUfpO4wenA    Zirzamin Official    85 videos
+                        #https://www.youtube.com/user/faridsadat1    Singers Intelligent    221 videos
+                        #https://www.youtube.com/user/TVofIRANIAN    TVof IRANIAN    433 videos
+                        #https://www.youtube.com/user/20071305    DemocracyForIran    2,408 videos
+                        #https://www.youtube.com/channel/UCYBvm2bg1UKib3r446n6F_w    Abbas Mohammd
+i    2 videos
+                        #https://www.youtube.com/user/abrishan    abrishan    45 videos
+                        #https://www.youtube.com/user/SSdeluxe1    SSdeluxe1    202 videos
+                        #https://www.youtube.com/user/AfghanstarToloTV    AfghanstarToloTV    2,000 videos
+                        #https://www.youtube.com/channel/UCv1X-D0rqyvGZxGfZZ_QCLQ    Kish &amp; Mat    25 videos
+                        #https://www.youtube.com/channel/UCQhw-CwVhy6D_4qbk-J_tLw    RahRapofficial    147 videos
+                        #https://www.youtube.com/channel/UCHM896K4_rh2M1OViryPPgQ    Radio Rap    989 videos
+                        #https://www.youtube.com/channel/UCOvdKs-u9g1BdWKMwyWx-lw    AFGHAN RAP STAR افغان رپ استار    189 videos
+                        #https://www.youtube.com/channel/UCDaxxyREN4zIJ6vZpyoEm5g    ShefeleXxX Show    21 videos
+                        #https://www.youtube.com/channel/UCI7C2luMZF3BF9pQVre9T_g    Talar Rap تال
+ ر رپ    246 videos
+
+
+
+		--entertainment fa
+
+			https://www.youtube.com/channel/UCILvg9F0hKxHBPaIs-XqZyQ
+			https://www.youtube.com/user/Yesardogush
+			https://www.youtube.com/channel/UCJdfAdkNvabgAzXfqd6BGQQ
+			https://www.youtube.com/channel/UCmz6sitJYxAi2U7nZw2gyQQ
+			https://www.youtube.com/user/333FAME333
+			https://www.youtube.com/channel/UC3l6JGXOX6c0dx7J_5Lelvw
+			https://www.youtube.com/user/newlifenavid
+			https://www.youtube.com/channel/UCefa8W1nszhNBOvQBWBYfVw
+			https://www.youtube.com/channel/UCENR1A8PSmlGCoVDNyCow_Q
+
+
+
+                        https://www.youtube.com/user/farbod97    Hasan Reyvandi حسن ریوندی
+                                1,356 videos    32) Published on Apr 29, 2017   60 seconds.
+				-young like vice. has laugh track
+                        https://www.youtube.com/channel/UCuuPbmoD1Zd11ZSrncUDX2Q    amir ali
+                                29 videos       2) Published on Nov 23, 2016    2:38
+				-sitcom
+
+
+			#https://www.youtube.com/channel/UCBsvHwig99_qSpXH6DOi7MA
+
+
+
 		--news fa
-		https://www.youtube.com/user/BBCPersian
+			https://www.youtube.com/channel/UCq504LI4YxpD61GtsSW3x6Q
+			https://www.youtube.com/user/jonbesherahesabz
+			https://www.youtube.com/channel/UCDkHC_almiw6WAihyQXUE4A
+			https://www.youtube.com/channel/UCVNtj0-6BEhaA19oCJIpHOw
+			https://www.youtube.com/user/20071305
+			https://www.youtube.com/channel/UC1BitoYuw5OoGzTWC4o_y7g
+			https://www.youtube.com/user/voacapitol
+			https://www.youtube.com/user/PNNVideo
+			https://www.youtube.com/user/aradparsi1
+			https://www.youtube.com/user/feministman
+			https://www.youtube.com/user/PNNVideo
+			https://www.youtube.com/channel/UCaXFGqawNZ-NAUFhNiCpn8Q
+			https://www.youtube.com/user/mihantv1
+			https://www.youtube.com/channel/UCNHhpk4Ju1c2v2wz-M1pdJw
+			https://www.youtube.com/user/wesamwesam8
+			https://www.youtube.com/user/abdolhamidismaeel
+			https://www.youtube.com/user/hasanzebel
+
+
+
+			https://www.youtube.com/channel/UCmYSXB9hdekRs3K4tXJLv3g
+			https://www.youtube.com/channel/UC6N1304eC-JxPTRw0LX35CQ
+
+
+
+
+			https://www.youtube.com/channel/UCBsvHwig99_qSpXH6DOi7MA
+			https://www.youtube.com/user/hichkaskabir
+			https://www.youtube.com/channel/UCzgfUOrvrLaZ29_ftNheLDQ
+			https://www.youtube.com/channel/UCB9sIbyXl-qzCVOveXhpLAg
+			https://www.youtube.com/channel/UCHM896K4_rh2M1OViryPPgQ
+			https://www.youtube.com/channel/UC4UFQrMnDfKuM5ych6yRWrA
+			https://www.youtube.com/user/t1rr4s
+			https://www.youtube.com/channel/UCt6lltyJiHR2lcj9Awfwndw
+			https://www.youtube.com/channel/UC4JiaTt7tw33EBd9frTp8ZA
+			https://www.youtube.com/channel/UCy6KaRTtD1t5J4-foPv-KXQ
+			https://www.youtube.com/channel/UC5rUOvW9aEf_aUQ8UqzBfSg
+			https://www.youtube.com/channel/UC2dydExo-ijtPQFG7avBmlA
+			https://www.youtube.com/channel/UCw-rCuPBedtajxe4kqGkXQQ
+			https://www.youtube.com/channel/UCYj1mM6nBeZH7XO79yG7doQ
+			https://www.youtube.com/user/MASOUDNORI68
+			https://www.youtube.com/channel/UCDOGTAkS7q9CynfkYmRNnKw
+			https://www.youtube.com/channel/UCy7F4aLgJlObkUPrILnOqUA
+			https://www.youtube.com/channel/UCrg37WRgiSKihk6TO4iE9Pw
+
+
+
+
+
+
+                        https://www.youtube.com/user/bluebird5iv    9,999,996 views
+                                163 videos      6) Published on Aug 30, 2017    43:28
+				-vblog
+                        https://www.youtube.com/user/IRANWIREvideos    IranWire
+                                770 videos      10) Published on Aug 16, 2017   1:26
+				-cartoon/comedy?
+                        https://www.youtube.com/user/inshadnews    Inshad News Network
+                                155 videos      15) Published on Jul 29, 2014   0:20
+				-vblog
+                        https://www.youtube.com/user/MTVLebanonNews    MTVLebanonNews ل       ر      ن        ب      لمقبل
+                                105,431 videos  7) Published on Jun 11, 2017    2:11
+				-lebanese?
+
+                        https://www.youtube.com/channel/UCovsb5nqTQJ5JQlCFDuEkPw    TubeMIND
+                                1,267 videos    38) Published on Jun 4, 2017    9 seconds.
+				-vblog
+                        https://www.youtube.com/user/hoorakhshstudios    hoorakhshstudios
+                                47 videos       6) Published on May 8, 2017     1:00
+				-animation? entertainment?
+                        https://www.youtube.com/channel/UCBQL-Ouui1jkeuQXM4tNh6g    Happy Persian
+                                460 videos      1) Published on Mar 11, 2017    0:58
+				-animation
+                        https://www.youtube.com/channel/UCHj9QbSNBQzMqAhoB245m6A    شبكة قصة عشق
+                                142 videos      9) Published on Jan 31, 2017    1:01
+				-tv show drama clips
+
+
+
+
+
+
+
+
+                        https://www.youtube.com/channel/UCpCmkrBuC4JifSemYB1p7Og    شبكه ابوظبي
+                                455 videos      15) Published on May 14, 2017   2:21
+				-english, dubai ads
+                        https://www.youtube.com/channel/UCuCtlmcyOPNqdBf_FfrS7kg    شبكة التلفزيون العربي - ترفيهي /AlarabyTV - Entertainment
+                                392 videos      33) Published on Dec 6, 2016    25 minutes.
+				-english documentary
+                        https://www.youtube.com/channel/UCCykjSjA5tZw69LpHlk1ULg    M.Saleh Naderi
+
+                                4 videos        4) Published on Nov 4, 2016     26:54
+				-english
+
+                        https://www.youtube.com/user/Arabstodaytv    Arabstodaytv
+                                977 videos      1) Published on Nov 1, 2013     2:35
+				-english news
+
+
+
+
+                        #https://www.youtube.com/channel/UCKZ5PS_6g06IWH6zONXqjbw    TosanTools    126 videos
+                        #https://www.youtube.com/user/TOLOnewsLive    TOLOnews    14,980 videos
+			#https://www.youtube.com/channel/UCBsvHwig99_qSpXH6DOi7MA
+			#https://www.youtube.com/channel/UCAOz0hPWSchfMOY9TggWPYw
+			#https://www.youtube.com/user/AlHayahTVNetwork
+			#https://www.youtube.com/user/Mayadeentv
+			#https://www.youtube.com/user/BBCPersian
 
 	----pa       
 		Indo-European 	Eastern Punjabi, Eastern Panjabi 	ਪੰਜਾਬੀ 	pa 	pan 	pan 	pan 	
@@ -1863,7 +2664,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 	----de       	
 		Indo-European   German  Deutsch   
 
-		--rap
+		--rap de
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=freestyle+rap+deutsch
 
 				https://www.youtube.com/user/www16barsde    16BARS.TV
@@ -2036,6 +2837,38 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
+		--government de
+		--regierung de
+
+
+
+		--podcast de
+		--komodie de
+		--komödie de
+		--comedy de
+			https://www.youtube.com/channel/UCE1g0Ln8K0De1fRqfD6swpA
+			https://www.youtube.com/channel/UCXTrODYN53UjUA-FmBa8MkA
+			https://www.youtube.com/channel/UCc3ySGYjUkXBBIEgsbUr0VQ
+			https://www.youtube.com/channel/UC3EV2N5-9YlhWZdcRx5q_TQ
+
+			https://www.youtube.com/channel/UC2PRKCuzo68h-sG23DPD82Q
+
+			https://www.youtube.com/user/wyldnwoody
+			https://www.youtube.com/user/HamburgTheaternacht
+			https://www.youtube.com/user/MrVenom1974
+
+                        https://www.youtube.com/user/diefilmfabrik    diefilmfabrik
+                                2,671 videos    1) Published on Sep 2, 2017     1:30:40
+				-film podcast review.  gut
+
+                        https://www.youtube.com/user/thatshanething    TVJuwelen HD
+                                119 videos      1) Published on Sep 2, 2017     1:26:06
+				-film
+
+			#https://www.youtube.com/channel/UCJ5aocRbkWUGMYrVSRUN0fg
+				movies
+			#https://www.youtube.com/channel/UC2ct1V8z6XYaaxD7FZYHOBQ
+			#https://www.youtube.com/user/Kybernaut1
 
 
 		--entertainment de
@@ -2199,10 +3032,15 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 		--entertainment en
+                        https://www.youtube.com/user/latenight    The Tonight Show Starring Jimmy Fallon
+                                3,692 videos    1) Published on Sep 12, 2017    2:44
+                        https://www.youtube.com/user/LateNightSeth    Late Night with Seth Meyers
+                                1,730 videos    2) Published on Sep 12, 2017    6:33
 			https://www.youtube.com/user/JimmyKimmelLive    Jimmy Kimmel Live
 				3,405 videos    1) Published on Feb 10, 2017
 			https://www.youtube.com/channel/UCMtFAi84ehTSYSE9XoHefig    The Late Show with Stephen Colbert
-				2,040 videos    1) Published on Feb 10, 2017
+                                2,903 videos    1) Published on Sep 9, 2017     10:47
+
 			https://www.youtube.com/user/TheLateLateShow    The Late Late Show with James Corden
 				1,626 videos    2) Published on Feb 3, 2017
 			https://www.youtube.com/user/OfficialGrahamNorton    The Graham Norton Show
@@ -2216,15 +3054,22 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 			https://www.youtube.com/user/LastWeekTonight	LastWeekTonight
 			        191 videos    1) Published on Jan 18, 2017
 
+                        https://www.youtube.com/channel/UCdANLtOJEt-cb-OwbjftztA    Lieutenants Loft
+                                72 videos       1) Published on Sep 12, 2017    3:50
+				-Joe Rogan / The Fighter and The Kid clips / Joey Diaz
+
 
 
 			#http://www.youtube.com/user/teamcoco
-			#https://www.youtube.com/channel/UCVTyTA7-g9nopHeHbeuvpRA	latenightseth
-			#https://www.youtube.com/user/latenight		tonight show with jimmy fallon
+
 
 			#https://www.youtube.com/channel/UCzQUP1qoWDoEbmsQxvdjxgQ	PowerfulJRE
 			#https://www.youtube.com/channel/UCFyA7Q7Huind9SRQqJZEkkg	Joe Rogan.
-			#https://www.youtube.com/channel/UCrm7RGOsstgF4qAG5mFGK-w/videos         Joe Rogan University - Fan Channel
+			#https://www.youtube.com/channel/UCrm7RGOsstgF4qAG5mFGK-w         Joe Rogan University - Fan Channel
+			#https://www.youtube.com/channel/UCnxGkOGNMqQEUMvroOWps6Q		JRE Clips
+			#https://www.youtube.com/channel/UCFyA7Q7Huind9SRQqJZEkkg	Joe Rogan Fan Page
+
+
 
 			#https://www.youtube.com/user/MondayMorningPodcast    Bill Burr
 				76 videos    1) Published on Feb 27, 2017
@@ -2240,6 +3085,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 		--kids en
+			dora the explorer
 			sesame street
 			barney
 			teletubbies
@@ -2294,10 +3140,324 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 	----el       
-		Indo-European 	Greek (modern) 	ελληνικά 	el 	ell 	gre 	ell 	ells 	
+		Indo-European 	Greek (modern) 	ελληνικά 	el 	ell 	gre 	ell 	ells
+
+
+		--rap el
+
+
+
+
+
+		--Κωμωδία el
+		--comedy el
+		--podcast el
+
+			https://www.youtube.com/channel/UC9K4V2arA6MGZ86N7Dpo2CQ
+			https://www.youtube.com/user/GorillaGrodd1979
+			https://www.youtube.com/user/eftaxpa
+			https://www.youtube.com/channel/UCLpS7nFem_OgjJ2Nh_fg7NA
+			https://www.youtube.com/user/NikosPerakisArchive
+			https://www.youtube.com/channel/UC-Hd8dJn2xvyqbzJhfyjpQQ
+
+
+                        https://www.youtube.com/channel/UCoEYVZwkbhtOpvyKdd2tJlg    New chanell
+                                2,214 videos    4) Published on Sep 3, 2017     1:07
+				-english viral videos
+                        https://www.youtube.com/channel/UC1a2VeGtwqQG2_p_VfZVBtA    Razor Jack
+                                105 videos      38) Published on Apr 22, 2017   10 minutes.
+				-video game commentary
+                        https://www.youtube.com/user/OrangeShark1    Nicolas Jovani
+                                130 videos      14) Published on Apr 13, 2017   11:55
+				-amateur personal vblog
+                        https://www.youtube.com/channel/UCiTIQtMEzLwgKnEdg-_OIgQ    Thanos Skillet
+                                        24) Published on Mar 15, 2017   3:21
+				-bueno
+                        https://www.youtube.com/user/PesToGrapta    PesToGrapta
+                                923 videos      6) Published on Feb 15, 2017    1:56
+				-francais
+                        https://www.youtube.com/channel/UC22QmPRkUBf_s80nOhn_bNg    Aderfia Kamika
+zi
+                                73 videos       9) Published on Apr 17, 2016    3:27
+				-enfant vblog
+                        https://www.youtube.com/user/PAOKorDEATH    PAOKorDEATH
+                                59 videos       8) Published on Mar 19, 2016    3:00
+				-viral videos, no greek
+                        https://www.youtube.com/channel/UCIw7T_ArSZTSuHbeVE4VkCg    kostas voulpi
+                                30 videos       19) Published on Jun 21, 2015   1:51
+				-black and white. greek comedy show. like honey mooners
+                        https://www.youtube.com/user/JoRgO1977    JoRgO1977
+                                212 videos      6) Published on Jul 15, 2015    1:13
+				-nouvelle, court	30s
+                        https://www.youtube.com/user/tvataka    TVataka Greek
+                                25 videos       25) Published on Feb 22, 2014   0:58
+
+
+			#https://www.youtube.com/user/Adraneiafull
+			#https://www.youtube.com/user/laosalmyrou
+			#https://www.youtube.com/channel/UCUmgfGGnPpQMfDMUrVhOk7g
+			#https://www.youtube.com/channel/UCv8DS2CMR7CnqDJhZF2WQ0g
+			#https://www.youtube.com/channel/UCml1q-7M8me67TfWRW_7kpQ
+			#https://www.youtube.com/user/NikosSalepis
+			#https://www.youtube.com/channel/UCm_GbUxIRimrKqk-8M2pPRQ
+			#https://www.youtube.com/user/HackerpcsSeries
+			#https://www.youtube.com/user/NEAFLORINA
+			#https://www.youtube.com/user/spirakoschania21
+			#https://www.youtube.com/user/ComedylabGR
+			#https://www.youtube.com/user/thessaliatv
+			#https://www.youtube.com/channel/UCnG_X7Nl3Qurdd8vdtp_15A
+			#https://www.youtube.com/channel/UCi3uO5WvvPu9o3FYDyShBBQ
+
+
+		--news el
+			https://www.youtube.com/user/GREEKTV4E
+				-religion?
+			https://www.youtube.com/user/EURepresentationGR
+			https://www.youtube.com/channel/UCvPJD5Q5s2T_XZo8W-jPSng
+			https://www.youtube.com/channel/UCqmsBDzsngmJsPB-qi603Vw
+			https://www.youtube.com/channel/UCvPJD5Q5s2T_XZo8W-jPSng
+			https://www.youtube.com/channel/UCaMNGNPq4sdna1ov23e-0-A
+			https://www.youtube.com/channel/UCAmlywA9DomFUHvP2vhGGcQ
+			https://www.youtube.com/channel/UCGL_s2a9wNG0j_TJY4hmBTQ
+			
+
+
+			https://www.youtube.com/channel/UC-L_MwEzpxsQqq2T-5eBdtA
+			https://www.youtube.com/user/nasosgrzangi
+			https://www.youtube.com/user/PETRIDISGEORGE
+
+
+			https://www.youtube.com/user/MegaGegonota
+			https://www.youtube.com/user/TheMegacyber69
+
+			https://www.youtube.com/user/VodafoneGreece
+			https://www.youtube.com/user/tileasty1
+			https://www.youtube.com/user/NKaklamanis
+			https://www.youtube.com/channel/UC9YtKbriM_YDPPEfFrc2Iyg
+			https://www.youtube.com/channel/UCgBTXcml-RcDw9Es7zekdNA
+			https://www.youtube.com/user/TerensKouik
+			https://www.youtube.com/user/maximtest7
+			https://www.youtube.com/channel/UCml1q-7M8me67TfWRW_7kpQ
+			https://www.youtube.com/user/ellopiapreveza
+			https://www.youtube.com/user/havgi
+			https://www.youtube.com/user/Pandieratube
+			https://www.youtube.com/channel/UC7cMXhEAsyOdNb_f_3aeMSg
+			https://www.youtube.com/user/HelenHrona
+			https://www.youtube.com/channel/UCw4oCPMp8Uu9XTi7tkd_lHw
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        https://www.youtube.com/user/startvgr    startvgr
+                                22,423 videos   1) Published on Sep 13, 2017    0:53
+				-movie clips
+                        https://www.youtube.com/user/ertsocialnetworks    ΕΡΤ Α.Ε.
+                                4,848 videos    2) Published on Sep 8, 2017     18:16
+				-news
+                        https://www.youtube.com/channel/UC1w3wp6fwAqUXsWyCWZB1kg    ΟΡΘΟΔΟΞΙΑ ΕΝ Ο
+ ΕΙ
+                                1,087 videos    12) Published on Sep 5, 2017    9:09
+				-documentary?
+                        https://www.youtube.com/user/firekreve2j    2J
+                                245 videos      4) Published on Aug 11, 2017    6:40
+				-comedian?
+
+
+
+
+
+
+                        #https://www.youtube.com/user/etvgr    Epsilon TV    3,212 videos
+                        #https://www.youtube.com/user/AlphaTVGreece    Alpha TV Greece    14,376 videos
+                        #https://www.youtube.com/user/MarkosSeferlis    Markos Seferlis    168 videos
+                        #https://www.youtube.com/user/Zappitvideo    zappit.gr    30,270 videos
+                        #https://www.youtube.com/user/902portal    902.gr    12,824 videos
+                        #https://www.youtube.com/user/Megatvweb    MegaTV    8,811 videos
+			#https://www.youtube.com/user/AntennaGR    ANT1 TV	14,759 videos
+			#https://www.youtube.com/channel/UCml1q-7M8me67TfWRW_7kpQ
+
+
+			https://www.youtube.com/results?search_query=%CE%95%CE%A1%CE%A42+%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AE+%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CF%89%CE%BD%CE%AF%CE%B1+%CE%A4%CE%B7%CE%BB%CE%B5%CF%8C%CF%81%CE%B1%CF%83%CE%B7+2
+			https://el.wikipedia.org/wiki/%CE%95%CE%A1%CE%A42
+
+			https://en.wikipedia.org/wiki/List_of_news_presenters#Greek_newsreaders
 
 	----pl  	
 		Indo-European   Polish  język polski, polszczyzna    
+		--rap pl
+                        https://www.youtube.com/user/SolarBialas    SB Maffija
+                                672 videos      3) Published on Jul 24, 2017    3:09
+				-bueno
+                        https://www.youtube.com/user/kaerwuTV    KARWAN TV
+                                54 videos       5) Published on Mar 22, 2017    2:14
+                        https://www.youtube.com/user/MegotBeats    megot
+                                52 videos       36) Published on Jul 28, 2015   2 minutes, 54 seconds.
+
+
+			#https://www.youtube.com/user/POLANDELITEHIPHOP
+
+			rapowanie
+			https://pl.wikipedia.org/wiki/Rap
+
+
+
+		--comedy pl
+		--komedia pl
+
+                        https://www.youtube.com/channel/UC7A5iwFhh5dLvo49geBhQ_Q    superfilm.pl
+                                265 videos      1) Published on Jun 26, 2017    1:14:04
+				-long movie
+                        https://www.youtube.com/channel/UC38bQDx0rDBi0CV2zyhORvg    fifiicmus alberto
+                                29 videos       4) Published on Jun 11, 2017    1:21:16
+				-long movie
+
+                        https://www.youtube.com/user/StandupPolska    Stand-up Polska
+                                139 videos      19) Published on Apr 23, 2017   8:32
+				-need to wait till 19)
+
+                        https://www.youtube.com/channel/UCuhMogpglC-dPx1_IV0nbSQ    komedia official
+                                65 videos       5) Published on Apr 18, 2017    0:36
+				-comedy show
+                        https://www.youtube.com/user/alchemiapolskiego    Marlena Ledzianowska
+                                248 videos      42) Published on Jan 28, 2017   2 minutes, 44 seconds.
+				-PhD / graduate student vblog?
+                        https://www.youtube.com/channel/UCbTQUxSaM4UpYC6-0rxiE9Q    maslak85
+                                20 videos       18) Published on Nov 24, 2016   7:17
+				-comedy club.  just for laughs
+                        https://www.youtube.com/user/SalaKinowa    SALA KINOWA
+                                124 videos      6) Published on Aug 23, 2016    5:43
+
+
+
+
+
+
+                        https://www.youtube.com/user/KinoSwiatPL    KinoSwiatPL
+                                1,166 videos    8) Published on Aug 16, 2017    1:24
+				-documentary.   francais / english
+                        https://www.youtube.com/channel/UCcphdP7YS_oh4FJU6ngkXnA    Andrzej Urlik
+                                13 videos       3) Published on Aug 16, 2015    5:29
+				-anime, japanese
+
+
+
+
+
+			#https://www.youtube.com/channel/UCt-J9e876ecPse1obaZwOxA
+			#https://www.youtube.com/channel/UCI6yzEV4xRolalANV3padWw
+			#https://www.youtube.com/user/SLAVICMUSIK2
+			#https://www.youtube.com/user/KorroosioComedy
+			#https://www.youtube.com/channel/UCFfs-J3qMGqFYeDdtm7tasw
+			#https://www.youtube.com/user/mietczynski
+			#https://www.youtube.com/user/newabratv
+			#https://www.youtube.com/channel/UC3V37UIL8an9uvBf39WIRZw
+			#https://www.youtube.com/user/wkrecenifilm
+			#https://www.youtube.com/channel/UCqkFP_kR0NZeOmk3w5FmMcg
+			#https://www.youtube.com/user/StandupBezCenzury
+
+
+
+
+
+		--news pl
+                        https://www.youtube.com/user/RadioMaryjaOfficial    Radio Maryja
+                                13,301 videos   4) Published on Sep 7, 2017     17:58
+				-no subtitles?
+				-pope
+                        https://www.youtube.com/channel/UCGUE2aWaTnUdBE6rZwGSBDQ    TVN24 - Topic
+                                        3) Published on Jun 11, 2017    0:52
+				https://pl.wikipedia.org/wiki/TVN24
+				https://pl.wikipedia.org/wiki/TVN24_BiS
+					TVN24 BiS
+					TVN24 Biznes i Świat
+                        https://www.youtube.com/user/TELEWIZJASUPERSTACJA    Superstacja
+                                4,355 videos    269) Published on Mar 1, 2017   2 minutes, 50 seconds.
+				-too far in, pour premiere video avec subtitres
+				-also, espanol?
+				https://www.youtube.com/watch?v=8tyEpov8R-M    Raport - 2016.04.18 - Entrevista con la Miss Supranational 2015
+					Apr 21, 2016
+                        https://www.youtube.com/channel/UC2IV6fYrkTofkBz7eWSghQw    PUPA-LONGA
+                                37 videos       16) Published on Jan 27, 2017   1:55
+				-vblog
+			https://www.youtube.com/channel/UC6BZuO0RAoHlZR802U81AMA	Superstacja - Topic
+				-pas de numbero
+				Sep 23, 2016
+				https://pl.wikipedia.org/wiki/Superstacja
+                        https://www.youtube.com/user/wyszkow24pl    wyszkow24pl
+                                55 videos       12) Published on Sep 3, 2014    0:23
+                        https://www.youtube.com/user/programrozwoju    Skuteczny Program Rozwoju
+                                59 videos       5) Published on Aug 22, 2014    1:04
+
+
+
+
+			#https://www.youtube.com/user/idzpodprad		idzpodprad
+			#https://www.youtube.com/channel/UCnyEms8N41edhlFs6XXlWjQ	Lord_info
+			#https://www.youtube.com/channel/UC3XSV8Bpu1pzAl5pcMQwi4Q	Tele Top69
+			#https://www.youtube.com/user/LaczyNasPilka	Łączy nas piłka
+			#https://www.youtube.com/user/boxingnewspl	boxingnewspl
+			#https://www.youtube.com/user/KSW	KSW
+			#https://www.youtube.com/user/rdcpolskieradio	rdcpolskieradio
+			#https://www.youtube.com/channel/UC9AnellCHYIHwDkx2BiWDkw	InteractiveWorld.pl
+				-LIVE NOW (jul 29,2017)
+			#https://www.youtube.com/channel/UCpsiLtnZUA1QT8VH3PaipvQ	Karolina Gruszecka
+			#https://www.youtube.com/user/tvprzeszow		TVP3 Rzeszów
+			#https://www.youtube.com/channel/UCTJmdyMfYForzMnaBKDa-bA	TVP Info - Topic
+			#https://www.youtube.com/channel/UCG7pCbRcGwOKA5V3QufRUOQ	tvp info na żywo
+			#https://www.youtube.com/user/YTtvpinfo	TVP Info
+				https://pl.wikipedia.org/wiki/TVP_Info
+			#https://www.youtube.com/channel/UCfyGggwEscN5tCQYDpgfnRg	Agropasja - program telewizyjny Marii Sikorskiej na antenie Polsat News i Polsat News 2
+				-seulment aller a 11
+			#https://www.youtube.com/channel/UClWmhv3QnNjJQ0RODPfdw3A	Polsat News - Topic
+				-pas de numero de videos total
+			#https://www.youtube.com/user/Polsat	Polsat
+				-pas de videos apres 20
+				https://pl.wikipedia.org/wiki/Polsat_Sport_News
+				https://pl.wikipedia.org/wiki/Polsat_News
+
+
+			#https://www.youtube.com/channel/UCc282c_TN8xIba_Z6GaDnQw	Telewizja Republika
+				-pas vu avec subtitre apres 30 vidoes
+			#https://www.youtube.com/user/TelewizjaRepublika		Telewizja Republika Kalendarz Historyczny
+				-pas vu avec subtitre apres 30 vidoes
+				Telewizja Republika
+
+
+
+		--government pl
+
+		--university pl
+
+		--physics pl
+
+		--entertainment pl
+                        https://www.youtube.com/user/MinecraftBlow    Blowek
+                                1,021 videos    2) Published on Sep 5, 2017     4:30
+				-vblog
+
+
+
+		--kids pl
+
+		--mma
+		--boxing
+		--dancing pl
+                        https://www.youtube.com/channel/UC0TuG7gHlsfiGn-Othuz4oQ    Dance Control
+                                186 videos      7) Published on Aug 17, 2017    2:38
+				-dance
+
+
+
+
 	----bg       
 		Indo-European 	Bulgarian 	български език 	bg 	bul 	bul 	bul 	buls 	
 	----lv       
@@ -2461,12 +3621,14 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 					139 videos    3) Published on Jan 22, 2017
 					-comedy hip hop rap
 					-comedy show, ~2min clips
+					-teenager rapping contre un chevaile
 				https://www.youtube.com/channel/UCWuyD6kkN3qbDj_0xHQ66rQ    ラップCM 公式チャンネル
 					36 videos    4) Published on Oct 21, 2016
 					-rap battles
 				https://www.youtube.com/channel/UCksSOwle_1gMWcpgAmu_baA    ラップちゃんメル
 					250 videos    3) Published on Apr 18, 2016
 					-rap battle tv show
+					???  broken / defunct?  jul 29,2017
 				https://www.youtube.com/user/bellflare    bellflare
 					25 videos    4) Published on Aug 4, 2015
 					-1 musik video mit subtitles
@@ -2574,7 +3736,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 		--news ja
                         https://www.youtube.com/user/ANNnewsCH    ANNnewsCH
-                                30,771 videos   1) Published on Apr 26, 2017    0:48
+                                33,350 videos   1) Published on Sep 13, 2017    0:51
                         https://www.youtube.com/user/NikkeiCNBC    日経CNBC
                                 1,092 videos    1) Published on Apr 26, 2017    8:32
 				-buono
@@ -2603,9 +3765,48 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
+		--ポッドキャスト ja
+		--podcast ja
+		--喜劇 ja
+		--comedy ja
+
+			https://www.youtube.com/channel/UCFYJGqTH_qLI-TiWurSX1DA
+			https://www.youtube.com/channel/UCiUNGAsa2VMWy_z2IkF0hYg
+
+			https://www.youtube.com/channel/UCWr2li_HKIUdOJ7k_a88Elw    R ラジオスター  喜劇
+                                94 videos       1) Published on Sep 2, 2017     8:49
+				-bueno
+                        https://www.youtube.com/channel/UCH9fJwz7aIbzfG813HwDSKg    新ニッポンの話   ポッドキャスト
+                                252 videos      1) Published on Aug 31, 2017    23:12
+				-audio only
+                        https://www.youtube.com/channel/UCLbDCDKdS9tMJYXiHBH4-rQ    douga omoro
+                                1,016 videos    1) Published on Aug 31, 2017    10:26
+				-round table radio show, audio only
+                        https://www.youtube.com/user/NORIPTV    NORIPTV
+                                2,430 videos    1) Published on Aug 31, 2017    5:17
+				-middle-age man rapping?
+                        https://www.youtube.com/channel/UCpM-yocGKVW8ahCeNiY9tGQ    YuniTube03.02
+                                26 videos       2) Published on Dec 26, 2016    36:39
+				-blanc homme?
+                        https://www.youtube.com/channel/UCmF1Pg0Z4HXhW2E0H4jaiIw    n Yasu
+                                746 videos      4) Published on Nov 17, 2014    1:23
+				-old, 2014
+				-vblog, not comedy
+
+
+			#https://www.youtube.com/channel/UCtGzhPS8umTa9XmkYrqEArA
+
+			https://www.youtube.com/results?search_query=%E5%96%9C%E5%8A%87+%E3%83%9D%E3%83%83%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88
+
+
 
 
 		--entertainment ja
+                        https://www.youtube.com/user/pancrasechannel    pancrase_mma
+                                470 videos      1) Published on Jul 2, 2017     1:12
+				-mma
+
+
 			https://www.youtube.com/channel/UChm8z6pjYbi71tm1XbMShrA    Cartoon KAT-TUN - Topic
 				    1) Published on Aug 11, 2012
 
@@ -2695,7 +3896,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
-		--kids
+		--kids ja
 
 		--anime
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=%E6%97%A5%E6%9C%AC%E5%8A%A8%E7%94%BB
@@ -2755,19 +3956,19 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 ----Sino-Tibetan
 	----zh taiwan
 		-more, car liee a USA?
-		--rap
-			https://www.youtube.com/results?q=%E9%A5%92%E8%88%8C%E9%A6%99%E6%B8%AF&sp=EgIQAg%253D%253D
-				https://www.youtube.com/user/TaiwanBlack    黑男
-					526 videos    4) Published on Jan 24, 2017
-					-vblog / livecasting
+		--rap zh-Hans
+			https://www.youtube.com/user/TaiwanBlack    黑男
+				526 videos    4) Published on Jan 24, 2017
+				-vblog / livecasting
 
+			https://www.youtube.com/results?q=%E9%A5%92%E8%88%8C%E9%A6%99%E6%B8%AF&sp=EgIQAg%253D%253D
 
 	----zh	 Sino-Tibetan    Chinese         中文 (Zhōngwén), 汉语, 漢語
 	----zh-Hans  
-		--rap
+		--rap zh-Hans
 			https://www.youtube.com/results?sp=EgIQAQ%253D%253D&q=%E9%A5%92%E8%88%8C
 				https://www.youtube.com/user/listentoonlymusic    唯有音樂 Only Music
-					    5) Published on Jan 27, 2017
+                                        2) Published on Mar 6, 2017     0:44
 					-singing show, like AGT
 				https://www.youtube.com/channel/UCLjPudBrp1j_hjtAa9qrhxw    小文
 					45 videos    2) Published on Apr 20, 2014
@@ -2900,9 +4101,8 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 		--news zh-Hans
-
                         https://www.youtube.com/user/ctitv    中天電視
-                                52,027 videos   42) Published on May 24, 2017   31 seconds.
+                                53,214 videos   6) Published on Sep 15, 2017    0:31
 				-entertainment
 				-deuxieme video, 8min
                         https://www.youtube.com/user/NTDCHINESE    NTDCHINESE
@@ -2910,10 +4110,6 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 					-us president coverage, in english.  commented in chinese
                                 59,189 videos   1) Published on Apr 27, 2017    2:55
 					-film awards news?
-                        https://www.youtube.com/channel/UCQ0w0kw6jQC00UmfFjewmkA    全球華人資訊聯盟
-                                2,052 videos    13) Published on May 2, 2017    3:03
-				-buono, news
-				-russian? english voice-over chinese
                         https://www.youtube.com/user/DarkMagicianPotter    文鍁
                                 2,644 videos    24) Published on Apr 17, 2017   3:28
 				-amateur interview?
@@ -2954,6 +4150,11 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
+                        #https://www.youtube.com/channel/UCQ0w0kw6jQC00UmfFjewmkA    全球華人資訊聯盟
+				//terminated jul 2017
+                                2,052 videos    13) Published on May 2, 2017    3:03
+				-buono, news
+				-russian? english voice-over chinese
 
 			#https://www.youtube.com/user/ifengofficial
 			#https://www.youtube.com/user/IfengComment
@@ -3005,7 +4206,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 			https://www.youtube.com/user/kankanewstvshow
 
 
-			https://www.youtube.com/channel/UCgHXsynhD8GxbFcNlPEn-_w	papi酱
+
 
 			https://www.youtube.com/channel/UCAPTuDRKCSZcGtRkot-znMA	Hey! 看過來!
 			https://www.youtube.com/channel/UCExVA_zP22XjQfiYV_xvpkA	王牌影視榜
@@ -3013,92 +4214,99 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
-
-
+                        https://www.youtube.com/channel/UCgHXsynhD8GxbFcNlPEn-_w    Papi酱官方频道 Papi Jiang Official Channel
+                                154 videos      5) Published on Sep 8, 2017     4:59
+				-papi vblog
                         https://www.youtube.com/channel/UCQ9JW4MDfPE3Jawa_5BM4Kw    SMG电视剧
                                 823 videos      10) Published on Apr 25, 2017   1:27
 				-drama tv show
                         https://www.youtube.com/user/kankanews    SMG上海电视台官方频道 SMG Shanghai TV Official Channel
                                 36,306 videos   11) Published on Apr 28, 2017   1:34
 				-like americans got talent
+
+
+
 			#https://www.youtube.com/user/kankanewstvshow
 
 
 			https://zh.wikipedia.org/wiki/%E6%99%9A%E9%97%B4%E5%A8%B1%E4%B9%90%E8%8A%82%E7%9B%AE
 
 
-		--university
+		--university zh-Hans
+			https://www.youtube.com/user/ntucourses    NTU Courses 課程．臺灣大學 EDU 頻道
+				177 videos    7) Published on May 22, 2016
+				-gut
+			https://www.youtube.com/channel/UCchaEXJYmGori8poh2f5d9w    改變世界看我的，公視前進奇點大學實境秀
+				59 videos    1) Published on Feb 8, 2016
+				-1 min advertisements
+
+
+
+
+			https://www.youtube.com/channel/UCpl-Bj1fn72KmnE8-fjDstg
+				#no name
+			       459 videos    1) Published on Jan 5, 2017
+				-westerner ensena ingles a chinese personas
+
+			#https://www.youtube.com/channel/UCtNuEeRGlFLTlC_AZ--fUZg    Peking University Overseas 北京大学 海外 宣传片
+				    1) Published on Nov 19, 2015
+					-uno video, entonces rotura
+			#https://www.youtube.com/user/AsiaUniversityTaiwan
+			#https://www.youtube.com/user/ntutw
+			#https://www.youtube.com/user/fcumkt
+			#https://www.youtube.com/user/RitsumeikanAPU    立命館アジア太平洋大学 - Ritsumeikan Asia Pacific University -
+				157 videos    1) Published on Jan 17, 2017
+				-japanese	Promoting study abroad
+			#https://www.youtube.com/channel/UC72gLz4f_KBz-OzLF68K3jw
+			#https://www.youtube.com/channel/UCg3UqzajyMbgQL0RzlrmmxQ
+			#https://www.youtube.com/channel/UCIdILacufjkovQzDvPqyqwQ
+			#https://www.youtube.com/user/nctu
+			#https://www.youtube.com/user/LiveTHU
+				Streamed live
+				5 hrs videos
+			#https://www.youtube.com/channel/UC5jEKeMMHHM0kIRLgEDgKVA
+			#https://www.youtube.com/channel/UCmc1LDhG9ok9En-mINY30Kw
+				-longue lectures 2h
+			#https://www.youtube.com/channel/UCZrbiZOvQ8sZH5ycwEtyptg
+			#https://www.youtube.com/user/tkuocw
+
+
+
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=%E5%A4%A7%E5%AD%B8
-				https://www.youtube.com/user/ntucourses    NTU Courses 課程．臺灣大學 EDU 頻道
-					177 videos    7) Published on May 22, 2016
-					-gut
-				https://www.youtube.com/channel/UCchaEXJYmGori8poh2f5d9w    改變世界看我的，公視前進奇點大學實境秀
-					59 videos    1) Published on Feb 8, 2016
-					-1 min advertisements
-
-
-
-
-				https://www.youtube.com/channel/UCpl-Bj1fn72KmnE8-fjDstg
-					#no name
-				       459 videos    1) Published on Jan 5, 2017
-					-westerner ensena ingles a chinese personas
-
-				#https://www.youtube.com/channel/UCtNuEeRGlFLTlC_AZ--fUZg    Peking University Overseas 北京大学 海外 宣传片
-					    1) Published on Nov 19, 2015
-						-uno video, entonces rotura
-				#https://www.youtube.com/user/AsiaUniversityTaiwan
-				#https://www.youtube.com/user/ntutw
-				#https://www.youtube.com/user/fcumkt
-				#https://www.youtube.com/user/RitsumeikanAPU    立命館アジア太平洋大学 - Ritsumeikan Asia Pacific University -
-					157 videos    1) Published on Jan 17, 2017
-					-japanese	Promoting study abroad
-				#https://www.youtube.com/channel/UC72gLz4f_KBz-OzLF68K3jw
-				#https://www.youtube.com/channel/UCg3UqzajyMbgQL0RzlrmmxQ
-				#https://www.youtube.com/channel/UCIdILacufjkovQzDvPqyqwQ
-				#https://www.youtube.com/user/nctu
-				#https://www.youtube.com/user/LiveTHU
-					Streamed live
-					5 hrs videos
-				#https://www.youtube.com/channel/UC5jEKeMMHHM0kIRLgEDgKVA
-				#https://www.youtube.com/channel/UCmc1LDhG9ok9En-mINY30Kw
-					-longue lectures 2h
-				#https://www.youtube.com/channel/UCZrbiZOvQ8sZH5ycwEtyptg
-				#https://www.youtube.com/user/tkuocw
-
 		--physics
 
 			https://en.wikipedia.org/wiki/Category:Physics
 			https://zh.wikipedia.org/wiki/Category:%E7%89%A9%E7%90%86%E5%AD%A6
 
 		--government
+			https://www.youtube.com/user/g0vTW    g0v.tw 台灣零時政府
+                                997 videos      5) Published on Sep 16, 2017    3:33
+				-bueno community meetings / gesellschaft
+				-hackathon, powerpoint presentations?
+			https://www.youtube.com/user/penghugov
+                                759 videos      18) Published on Aug 18, 2017   5:10
+				-gesellschaft			bueno
+			https://www.youtube.com/user/kcgofficetube    高雄市政府 市政影音
+				558 videos    3) Published on Feb 7, 2017
+				-nouvelles politique
+
+
+			https://www.youtube.com/user/flowerhome520    縣長張花冠嘉義縣政府
+				642 videos    6) Published on Dec 7, 2015
+				-malo, amateur news site?  not government related
+				-gon-go
+				-1min
+			https://www.youtube.com/user/TaipeiCityNo1
+				1,021 videos    5) Published on Jan 26, 2017
+				-malo, mandarin advertisements
+				-1min
+
+
+
+
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=%E6%94%BF%E5%BA%9C
-				https://www.youtube.com/user/kcgofficetube    高雄市政府 市政影音
-					558 videos    3) Published on Feb 7, 2017
-					-nouvelles politique
-				https://www.youtube.com/user/g0vTW    g0v.tw 台灣零時政府
-					864 videos    1) Published on Dec 17, 2016
-					-bueno community meetings / gesellschaft
-				https://www.youtube.com/user/penghugov
-				        656 videos    3) Published on Jan 25, 2017
-					-gesellschaft			bueno
-
-
-				https://www.youtube.com/user/flowerhome520    縣長張花冠嘉義縣政府
-					642 videos    6) Published on Dec 7, 2015
-					-malo, amateur news site?  not government related
-					-gon-go
-					-1min
-				https://www.youtube.com/user/TaipeiCityNo1
-					1,021 videos    5) Published on Jan 26, 2017
-					-malo, mandarin advertisements
-					-1min
-
-
-
-
 	
-		--kids
+		--kids zh-Hans
 
 		--cartoons
 			--chinese cartoons
@@ -3269,12 +4477,12 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 		--news zh-Hant
+                        https://www.youtube.com/user/dhkchannel
+                                3,061 videos    33) Published on Aug 5, 2017    111 seconds.
+				-hong kong, cantonese
                         https://www.youtube.com/channel/UCSoEEDRY9FZbcdVRB2ZuwGg    852郵報
                                 4,114 videos    25) Published on Apr 28, 2017   8:27
 				-amateur news
-                        https://www.youtube.com/user/dhkchannel
-                                2,933 videos    1) Published on Apr 26, 2017    13:27
-				-hong kong, cantonese
 
 
 
@@ -3326,6 +4534,16 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 	----ko           Koreanic        Korean  한국어
 		--rap
+                        https://www.youtube.com/channel/UCfzLxbTCvu6k-1k0uctNVMw    랩하는신대리
+                                80 videos       6) Published on Jun 2, 2017     4:01
+
+				66 videos    Published on Dec 15, 2016
+				-!gut, frau / fille
+				-hip hop rap chica mujere
+				https://www.instagram.com/sora_sosora/
+				https://www.facebook.com/shin6577
+
+
 			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=%EB%9E%A9+%28%EC%9D%8C%EC%95%85%29
 				--pg 1,2
 
@@ -3349,12 +4567,6 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 					10 videos    2) Published on Jan 23, 2017
 					-bueno
 					-self video remix
-				https://www.youtube.com/channel/UCfzLxbTCvu6k-1k0uctNVMw
-					66 videos    Published on Dec 15, 2016
-					-!gut, frau
-					-hip hop rap chica mujere
-					https://www.instagram.com/sora_sosora/
-					https://www.facebook.com/shin6577
 				https://www.youtube.com/channel/UClePEDK-RwXA4X8r_ehEe1Q    랩 라이브 일반인들의
 					24 videos    7) Published on Nov 30, 2016
 					-cellphone recording live stage performance, eminem, pineapple 
@@ -3601,14 +4813,15 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 		--news ko
-			https://www.youtube.com/user/NewsKBS    KBS NEWS
-                                25,735 videos   1) Published on May 27, 2017    1:42
-				-elections live
-				-mixed with english news
 			https://www.youtube.com/user/FactTVonair    팩트TV
 				8,304 videos    2) Published on Apr 26, 2017    5:49
 				-live
 				-parliamentary debates?  2h
+			https://www.youtube.com/user/NewsKBS    KBS NEWS
+                                25,735 videos   1) Published on May 27, 2017    1:42
+				-elections live
+				-mixed with english news
+				-has guitar music with news
 			https://www.youtube.com/user/OhmynewsTV    OhmynewsTV
 				5,258 videos    2) Published on Apr 23, 2017
 				-longue 45mins.   like tyt news  (the young turks)
@@ -3674,17 +4887,77 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 				https://ko.wikipedia.org/wiki/KBS_%EB%89%B4%EC%8A%A4_9
 				https://ko.wikipedia.org/wiki/JTBC_%EB%89%B4%EC%8A%A4%EB%A3%B8
 
+
+
+		--팟캐스트 ko
+		--podcast ko
+		--희극 ko
+		--comedy ko
+			https://www.youtube.com/channel/UC30MF9q5xGIvpl2idifxPtw
+			https://www.youtube.com/channel/UCvJweEBlMAB4DrcxJYZHXAA
+			https://www.youtube.com/channel/UCf8xJL-CznwfW7W2LO3y_EQ
+			https://www.youtube.com/channel/UCe02zu5rXTHZweaZnXPjjzg
+			https://www.youtube.com/channel/UCJ-Ur9ufufZZGmeQIqBYmzQ
+			https://www.youtube.com/channel/UCWCGQHjso_MelHy7G65IUZg
+			https://www.youtube.com/channel/UC30MF9q5xGIvpl2idifxPtw
+			https://www.youtube.com/channel/UC_N0T1G6aTBcUFJHL2u0q6g
+			https://www.youtube.com/channel/UCaRsIjUenhWIdu9WGreIC4g
+			https://www.youtube.com/channel/UCpmAiWIGtd6dgOzKHnuHS4Q
+			https://www.youtube.com/channel/UCkX_Scjm-4nxso7hW_Bw0ag
+			https://www.youtube.com/channel/UCtfGLmp6xMwvPoYpI-A5Kdg
+			https://www.youtube.com/user/weareflyingtrees
+			https://www.youtube.com/user/mevpr
+			https://www.youtube.com/user/CJENMMEDIA
+			https://www.youtube.com/user/patrachair
+
+
+
+                        https://www.youtube.com/user/GYMediacenter    고양영상미디어센터
+                                201 videos      1) Published on Aug 30, 2017    41:07
+				-bueno, audio only
+                        https://www.youtube.com/user/thekyunghyangtv    thekyunghyangtv
+                                4,097 videos    1) Published on Aug 31, 2017    54:57
+				-bueno, audio only
+                        https://www.youtube.com/user/yonghokim    Yongho Kim
+                                866 videos      1) Streamed live on Aug 27, 2017        14:25
+				-vblog
+                        https://www.youtube.com/user/kukminradio2013    미디어협동조합
+                                13,932 videos   5) Published on Jan 13, 2017    25:51
+				-amateur corporate seminar recordings.  not comedy
+
+
+
+
+                        https://www.youtube.com/channel/UCOEj2kOZN11qnJaAfZrYg9g    믿고 듣는 Try again! 이근철 영어회화
+                                77 videos       1) Published on Aug 30, 2017    29:04
+				-homme et femme apprendre anglais
+
+			https://www.youtube.com/results?search_query=%ED%9D%AC%EA%B7%B9+%ED%8C%9F%EC%BA%90%EC%8A%A4%ED%8A%B8
+
+
+
+
 		--entertainment ko
+                        https://www.youtube.com/user/roadfc    ROAD FIGHTING CHAMPIONSHIP
+                                1,382 videos    1) Published on Jul 13, 2017    3:50
+				-mma organisation korean
+				https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%93%9C_FC
+				https://en.wikipedia.org/wiki/Road_Fighting_Championship
 
-			https://www.youtube.com/channel/UC8dP-2C0Z_2P7b3EvTs0tKg
-			https://www.youtube.com/channel/UCeUisiec4oauZ7ngZ-FSOCQ
-			https://www.youtube.com/channel/UC3va5U9NULz5A3K2ZlZQHYg
+                        https://www.youtube.com/channel/UC3va5U9NULz5A3K2ZlZQHYg    연합뉴스TV Entertainment
+                                1,908 videos    1) Published on Jul 11, 2017    3:45
+				-recreational / lifestyle news
 
+                        https://www.youtube.com/channel/UCeUisiec4oauZ7ngZ-FSOCQ    Tei&#39;s Happy House
+                                570 videos      1) Published on Jul 13, 2017    7:13
+				-children's programming.
+				-child & mother
+                        https://www.youtube.com/channel/UC8dP-2C0Z_2P7b3EvTs0tKg    광순언니
+                                161 videos      1) Published on Jun 8, 2017     3:11
 			https://www.youtube.com/user/kbsworld    KBS World TV
 				22,502 videos    2) Published on Apr 25, 2017
 				-32min
 				-korean soap opera show
-
 			https://www.youtube.com/user/thestar	더스타 / The STAR
 				1,458 videos    1) Published on Feb 2, 2017
 				색다른 스타들의 소식! K-pop STAR INTERVIEW &amp; REPORT (
@@ -3728,7 +5001,7 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 				https://www.youtube.com/channel/UCIM00g13rLU9xWFoMV8pomQ
 				https://www.youtube.com/channel/UCbFzvzDu17eDZ3RIeaLRswQ
 
-		--kids
+		--kids ko
 			https://www.youtube.com/channel/UC4nvy6J8umjo6J6T_F-9BWA    한국물리학회
 				176 videos    1) Published on Dec 7, 2016
 				-children cut outs, not physics
@@ -3876,8 +5149,11 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 
 
 
+		--comedy ar
+                        https://www.youtube.com/user/comediatvtube    Comedia Web Tv 
+                                797 videos      3) Published on Apr 16, 2015    1:09
+
 		--entertainment ar
-		--comedy
 			https://www.youtube.com/results?q=%D9%83%D9%88%D9%85%D9%8A%D8%AF%D9%8A%D8%A7&sp=EgIQAg%253D%253D
 				https://www.youtube.com/user/RoyaComedy    Roya Comedy
 					886 videos    11) Published on Mar 27, 2017
@@ -3927,15 +5203,141 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 			Austroasiatic 	Khmer 	ខ្មែរ, ខេមរភាសា, ភាសាខ្មែរ 	km 	khm 	khm 	khm 		a.k.a. Cambodian
 
 ----Austronesian
+	----tl	(does not exist in youtube-dl langauge list)
 	----fil      
 		Austronesian 	Tagalog 	Wikang Tagalog 	tl 	tgl 	tgl 	tgl 		Note: Filipino (Pilipino) has the code [fil]
 
-		--rap
-		https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=filipino+rap
+		--rap fil
 			https://www.youtube.com/user/fliptopbattles    fliptopbattles
 				672 videos    15) Published on Nov 27, 2016
 				-live stage, crowd
 				-rap battle insults, no music
+
+			https://www.youtube.com/user/ed1215able
+			https://www.youtube.com/channel/UC8af7Y8_bkOUoGQ9b9CnG0w
+			https://www.youtube.com/user/MusicOPM
+			https://www.youtube.com/user/MyJoshchannel
+			https://www.youtube.com/user/bandzone
+			https://www.youtube.com/user/macel831
+			https://www.youtube.com/user/romz8256
+			https://www.youtube.com/user/CRM225
+			https://www.youtube.com/user/xxnognogxx
+			https://www.youtube.com/channel/UC8af7Y8_bkOUoGQ9b9CnG0w
+			https://www.youtube.com/user/jireh214
+			https://www.youtube.com/channel/UC0x58b8W1OdhFcr3RJmJbmg
+			https://www.youtube.com/channel/UCjz5Ai3RBvw-vdhii-AE45g
+			https://www.youtube.com/channel/UCufBZC1Z_X9xB1DuZaBwn5w
+			https://www.youtube.com/channel/UCoamG5sDawVpJWVk283qc7Q
+			https://www.youtube.com/channel/UCzRmhTJRHP1R42kwLAwVL5Q
+			https://www.youtube.com/channel/UCBcMWYiTFXDpwpM--awxXmA
+			https://www.youtube.com/channel/UCH5gk4rLH2cLGckCP80Z2QQ
+			https://www.youtube.com/user/r2kris
+			https://www.youtube.com/channel/UC4I0BJW2ZGeSvlSf_cbCckQ
+			https://www.youtube.com/channel/UCAyW0qTuxTnNW0jmDpfUBMQ
+			https://www.youtube.com/channel/UCAPdUrqtNbX0xbH1azLdGpA
+			https://www.youtube.com/channel/UCHmKShSsLjQQrwqUWk3j5_g
+			https://www.youtube.com/channel/UCkmb93LsCftW0-EBG3th8SQ
+			https://www.youtube.com/channel/UCnHbVzEIa7aj3TXFJ4g9rIA
+
+
+			https://tl.wikipedia.org/wiki/Tugtugin
+			https://www.youtube.com/results?search_query=Tugtugin
+
+			https://www.youtube.com/results?sp=EgIQAg%253D%253D&q=filipino+rap
+
+		--news fil
+			https://www.youtube.com/channel/UCxhygwqQ1ZMoBGQM2yEcNug
+			https://www.youtube.com/channel/UC_rAA9x_KQZxfJwsqcWGMkw
+			https://www.youtube.com/channel/UC4ilKKNCUucoejYySOIiQTQ
+			https://www.youtube.com/channel/UCSKdvBlaN8J-3I2E0KpYYYg
+			https://www.youtube.com/user/News5Everywhere
+			https://www.youtube.com/user/BuhayOFWTV
+			https://www.youtube.com/user/TVratedPG
+			https://www.youtube.com/channel/UCjMx02QjD7DT3CfA-X-iglw
+			https://www.youtube.com/user/gmapublicaffairs
+			https://www.youtube.com/channel/UC99o5sNr0JuSH7bLFgVzNcA
+			https://www.youtube.com/channel/UCBq1lbEljHrswhHy6y4rpig
+			https://www.youtube.com/channel/UC7d4u52ChnPShpfdHmTAkvg
+			https://www.youtube.com/channel/UCYm_3Q79ImioY_gg9z9a9vg
+			https://www.youtube.com/channel/UCSqB440tnLkdHgL73H7kZMg
+			https://www.youtube.com/channel/UCNJ4O0LvYuMOiOvS-g6eADA
+			https://www.youtube.com/user/abscbnfoundation
+			https://www.youtube.com/channel/UCanSUlhgDEwVpNdVEurMA1A
+			https://www.youtube.com/channel/UC99okpfSvrXj18KQ9zicrkQ
+			https://www.youtube.com/channel/UCx-vh6wQxma8c61Y7nyxIHw
+			https://www.youtube.com/channel/UCwJlYCZp-O0Exq5RoLzMFOA
+			https://www.youtube.com/channel/UCANljg-hUhAzRurgjipBQBA
+			https://www.youtube.com/channel/UCatxoxTnOasVNA5xYZwlCYg
+			https://www.youtube.com/channel/UCU3VbD2rWUn4pO_orLYHy-Q
+			https://www.youtube.com/channel/UCJWIDlQ5A6cjCWkhW3eXiGg
+			https://www.youtube.com/user/arapi6
+			https://www.youtube.com/channel/UCwaQgk6zA78Eq2uacNE7kTw
+			https://www.youtube.com/channel/UCj6spMO3ybZPobE0T5perHA
+			https://www.youtube.com/user/vanziedorcede
+			https://www.youtube.com/channel/UCSld-dxwSkLyHpX8wfAavLA
+			https://www.youtube.com/channel/UCjYGOLnfrxUGLmO6h4MScZA
+			https://www.youtube.com/channel/UCZ_GT1d2J-fjj8SyfNyPCqQ
+			https://www.youtube.com/channel/UCJWIDlQ5A6cjCWkhW3eXiGg
+			https://www.youtube.com/user/DYABSugbo
+			https://www.youtube.com/user/alindasay
+			https://www.youtube.com/user/rdelerme
+			https://www.youtube.com/user/dyab
+			https://www.youtube.com/user/mykelbyte1214
+			https://www.youtube.com/user/masterdan13
+			https://www.youtube.com/channel/UCaN2DsKgl6ya-VcFF1rbvgQ
+			https://www.youtube.com/channel/UCV8M36VMofTDLWPTifLp7UA
+			https://www.youtube.com/channel/UChXyW7H8ec3_IcK3Ymj5OPg
+			https://www.youtube.com/user/gdespacio
+			https://www.youtube.com/user/llusanta
+			https://www.youtube.com/channel/UC019Ryr2vb9EZ0TdCCeUXFA
+			https://www.youtube.com/user/magandafilipino
+			https://www.youtube.com/channel/UC0q98xSfG4YsHemw8UzHqiA
+			https://www.youtube.com/user/michelledy051
+			https://www.youtube.com/channel/UCSKdvBlaN8J-3I2E0KpYYYg
+			https://www.youtube.com/user/bidyobandido
+			https://www.youtube.com/user/sandiessss
+			https://www.youtube.com/channel/UCT0RqU2Cvf18d2VZulhsXJQ
+			https://www.youtube.com/channel/UCAcknlyPKQHgHVgJO-rZgWg
+			https://www.youtube.com/channel/UCPFSLoyleaF-Gu-HIQQc3aw
+			https://www.youtube.com/user/PTV4sports
+			https://www.youtube.com/channel/UCO1gv4Vvf9gx9J6Dpr-4bdA
+
+
+
+                        https://www.youtube.com/channel/UCcTiBX8js_djhSSlmJRI99A    DZRH News Television
+                                3,755 videos    1) Published on Sep 22, 2017    2:10
+				-bueno
+                        https://www.youtube.com/user/gmanews    GMA News
+                                226,647 videos  18) Published on Sep 22, 2017   5:54
+				-bueno
+                        https://www.youtube.com/user/GMANETWORK    GMA Network
+                                49,983 videos   1) Published on Sep 22, 2017    5:52
+				-bueno
+
+
+
+                        https://www.youtube.com/channel/UCjZaM49vRsWp6mrQBTTtX5g    Popular on YouTube - Philippines
+                                        6) Published on Sep 12, 2017    4:58
+				-english
+                        https://www.youtube.com/user/PTVPhilippines    PTV
+                                99,766 videos   1) Published on Sep 22, 2017    1:22
+				-english
+
+
+                        #https://www.youtube.com/user/GMA7PinoyTV    GMA7PinoyTV    2 videos
+                        #https://www.youtube.com/user/ABSCBNOnline    ABS-CBN Entertainment    71,738 videos
+                        #https://www.youtube.com/user/TV5Philippines    TV5 Philippines    2,888 videos
+                        #https://www.youtube.com/user/TV5newschannel    TV5 News    112,172 videos
+                        #https://www.youtube.com/user/TheABSCBNNews    ABS-CBN News    60,797 videos
+                        #https://www.youtube.com/user/GMANewsTV    GMANewsTV    132 videos
+
+
+
+
+		--government fil
+                        https://www.youtube.com/user/SenatePhilippines    Senate of the Philippines
+                                766 videos      1) Streamed live on Sep 21, 2017        14:10
+				-english?
 
 
 
@@ -3946,6 +5348,20 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 		https://meta.wikimedia.org/wiki/List_of_Wikipedias
 		https://en.wikipedia.org/wiki/Cebuano_language
 		https://en.wikipedia.org/wiki/Visayan_languages
+
+		--rap ceb
+
+		--news ceb
+
+
+	----id       
+		id       vtt, ttml                             
+			Austronesian 	Indonesian 	Bahasa Indonesia 	id 	ind 	ind 	ind 		Covered by macrolanguage [ms/msa]
+		--rap id
+
+		--news id
+
+
 	----haw      
 		│ 215 │ Hawaiian         │ Hawai`i           │ haw          
 		https://meta.wikimedia.org/wiki/List_of_Wikipedias
@@ -3963,9 +5379,6 @@ https://en.wikipedia.org/wiki/List_of_news_television_channels
 	----sm       
 		sm       vtt, ttml        
 			Austronesian 	Samoan 	gagana fa'a Samoa 	sm 	smo 	smo 	smo 		
-	----id       
-		id       vtt, ttml                             
-			Austronesian 	Indonesian 	Bahasa Indonesia 	id 	ind 	ind 	ind 		Covered by macrolanguage [ms/msa]
 	----mi       
 		mi       vtt, ttml
 			Austronesian 	Māori 	te reo Māori 	mi 	mri 	mao 	mri 		
@@ -6392,4 +7805,7 @@ https://www.youtube.com/results?search_query=mitch+hedberg&search_sort=video_vie
 
 		https://de.wikinews.org/wiki/Hauptseite
 
+
+
+https://9gag.com/gag/ax0WgrD?ref=fsidebar       These 25 Countries Have The Highest Average IQ
 

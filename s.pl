@@ -110,8 +110,11 @@ my $subtitle_option="";
 my $date_posted ="";
 
 
+my $dernier_count=0;
+my $dernier_date=0;
 
 
+my ($title, $video_url, $views);
 
 
 
@@ -413,27 +416,47 @@ sub recent_video_printing {
 	#set le recent video avec subtitres
 	if ($recent_video_flag == 0) {
 		$recent_video_date = $video_count .") " . $date_posted;
+		#$recent_video_date = "Premier video avec subtitre trouvé: " . $video_count .") " . $date_posted;
 		$recent_video_time_print = $recent_video_time;
 		#echo "Streamed live Jan 31, 2017" | cut -f3- -d" ";
 		$recent_video_flag = 1;
 	}
 
 
+        print "----Channels recent\n";
+	#creer channel list dans /d/<LANG>/z-channel_list	
+	#https://gist.github.com/Mayccoll/cc12c23427857f3c9976
+	# delete ALL blank lines from a file (same as "grep '.' ")
+	system("cd -- d/$first_lang; \
+		sed -i s/.*$channel_or_user.*//g z-channel_list; \
+		sed -i '/./!d' z-channel_list; \
+		echo '$channel_url	$channel_name	$channel_num_videos	$recent_video_date	$recent_video_time_print' >> z-channel_list; tail z-channel_list; \
+		echo");
+
+
 	#imprimer recent stats
+        print "----l.txt\n";
 	print "			$channel_url    $channel_name \n";
-	print "				$channel_num_videos	$recent_video_date	$recent_video_time_print\n";
-	#print "        $channel_num_videos    $recent_video_date \n";
-	#print "        -$recent_video_time_print \n";
+	print "				$channel_num_videos	$recent_video_date	$recent_video_time_print\n\n";
 
 
-	print "\n";
+        print "----Video maintenant\n";
+        print "$video_url    $title\n";
+	print "		$video_count) $date_posted	($video_count / $channel_num_videos)\n\n";
+
 
 }
 
 
 
 
+sub dernier_video {
 
+	print "Dernier video avec subtitres: $dernier_count) $dernier_date	($video_count / $channel_num_videos) \n";
+
+	print "\n\n";
+
+}
 
 
 
@@ -445,7 +468,6 @@ open(VIDEOLIST, "<d/$first_lang/$channel_or_user/videos_list") or die $!;
 
 
 
-my $dernier_count=0;
 
 while(<VIDEOLIST>)  {  
 	chomp;
@@ -462,11 +484,14 @@ while(<VIDEOLIST>)  {
 
 	#recent_video_printing();
 
+	print "----No videos avec subtitre (pour l.txt)\n";
+	print "			#$channel_url    $channel_name    $channel_num_videos\n\n";
+
 	# imprimer channel stats
 	#####print channel title and statistics
 	system("cd -- d/$first_lang/$channel_or_user/$video; echo '######################################## $channel_url    $channel_name' | tee -a info");
 	#print "\n================================ $channel_url    $channel_name \n";
-	system("cd -- d/$first_lang/$channel_or_user/$video; echo '################################ $video_count / $channel_num_videos    $recent_video_date' | tee -a info");
+	system("cd -- d/$first_lang/$channel_or_user/$video; echo '################################ $channel_num_videos    $recent_video_date' | tee -a info");
 	#print "======================== $channel_num_videos \n";
 	system("cd -- d/$first_lang/$channel_or_user/$video; echo '################################ $channel_subscribers subscribers' | tee -a info");
 	#print "======================== $channel_subscribers subscribers \n";
@@ -499,7 +524,7 @@ while(<VIDEOLIST>)  {
 
 
 	##prends video titre
-	my $title=`cd -- d/$first_lang/$channel_or_user/$video; <$video grep -no --color '<meta name=\"title.*' | cut -f4 -d'\"' `;
+	$title=`cd -- d/$first_lang/$channel_or_user/$video; <$video grep -no --color '<meta name=\"title.*' | cut -f4 -d'\"' `;
 	chomp $title;
 	#system("cd -- d/$channel_or_user/$video;<$video grep -no --color '<meta name=\"title.*' | cut -f4 -d'\"'");
 	#ln -s / grep ne fonction pas avec les files qui commence avec '-'	CHANNELID: UCrJ6XewaatAEd25QUDxFM6Q / VIDEOID: -0o11T74uIU
@@ -508,7 +533,7 @@ while(<VIDEOLIST>)  {
 
 
 	##prend video URL
-	my $video_url=`echo https://www.youtube.com/watch?v=$video `;
+	$video_url=`echo https://www.youtube.com/watch?v=$video `;
 	chomp ($video_url);
 	#system("echo https://www.youtube.com/watch?v=$video");
 
@@ -525,7 +550,7 @@ while(<VIDEOLIST>)  {
 		` ;
 	chomp $date_posted;
 	##prends date 'Published on / Streamed Live / Uploaded on"
-	system("cd -- d/$first_lang/$channel_or_user/$video; echo '================ $date_posted ' | tee -a info ");
+	system("cd -- d/$first_lang/$channel_or_user/$video; echo '================ $video_count) $date_posted	($video_count / $channel_num_videos)' | tee -a info ");
 
 	#system("cd -- d/$channel_or_user/$video; grep -no --color 'Published on.*' $video | cut -f2 -d':' | cut -f1 -d'<'");
 	#system("w3m -dump https://www.youtube.com/watch?v=$video | grep Published | cut -f3- -d' '");
@@ -538,7 +563,7 @@ while(<VIDEOLIST>)  {
 	#grep -P - use Perl (pour non-greedy .*?)
 
 	#my $views = `cd -- d/$channel_or_user/$video; <$video grep -noP --color '\"view_count\":\".*?\,' | cut -f4 -d'\"' `;
-	my $views = `cd -- d/$first_lang/$channel_or_user/$video; <$video grep -noP --color 'watch-view-count.* views' |cut -d'\>' -f2 ` ;
+	$views = `cd -- d/$first_lang/$channel_or_user/$video; <$video grep -noP --color 'watch-view-count.* views' |cut -d'\>' -f2 ` ;
 	chomp $views;
 	system("cd -- d/$first_lang/$channel_or_user/$video; echo '================ $views' | tee -a info");
 	#print "-------- $views \n";
@@ -589,15 +614,17 @@ while(<VIDEOLIST>)  {
 				system("cd -- d/$first_lang/$channel_or_user; rm -rf -- $video ");
 				#system("cd -- d/$channel_or_user; rm -- -rf $video 2> /dev/null ");
 
-				#skip video, aller a la prochaine
-				print "Dernier video avec subtitres: $dernier_count \n";
+				dernier_video();
 
+				#skip video, aller a la prochaine
 				next;
 			}
 
+			#print recent video
+			#alors peut mettre dans l.txt, pendant que ca download
+			#recent_video_printing();
 
-
-
+        		print "----youtube-dl\n";
 			system("cd -- d/$first_lang/$channel_or_user/$video; youtube-dl -l -f $quality https://www.youtube.com/watch?v=$video --write-auto-sub --sub-lang $lang ");
 
 			#creer, donc, peut jouer si offline
@@ -609,6 +636,8 @@ while(<VIDEOLIST>)  {
 		}
 
 		$subtitle_option="--sub-file=_$lang.vtt";
+		#avoir seulement sur le fond de l'ecran
+		#$subtitle_option="--sub-file=_$lang.vtt --sub-file='info' --sid=1 --secondary-sid=2";
 
 	}
 
@@ -643,13 +672,17 @@ while(<VIDEOLIST>)  {
 				system("cd -- d/$first_lang/$channel_or_user; rm -rf -- $video ");
 				#system("cd -- d/$channel_or_user; rm -- -rf $video 2> /dev/null ");
 			
-				print "Dernier video avec subtitres: $dernier_count \n\n";
+				dernier_video();
 
 				next;
 			}
 
+			#print recent video
+			#alors peut mettre dans l.txt, pendant que ca download
+			#recent_video_printing();
 
 			####download le video et les subtitles
+        		print "----youtube-dl\n";
 			system("cd -- d/$first_lang/$channel_or_user/$video; youtube-dl -l -f $quality https://www.youtube.com/watch?v=$video --write-auto-sub --sub-lang $lang");
 
 			#besoin pour voir download progress (size de file)	 [download] 100% of 1.67MiB in 00:05		
@@ -703,15 +736,23 @@ while(<VIDEOLIST>)  {
 		}
 
 		$subtitle_option="--sub-file=__$lang.vtt";
+		#avoir seulement sur le fond de l'ecran
+		#$subtitle_option="--sub-file=__$lang.vtt --sub-file='info' --sid=1 --secondary-sid=2";
 
 	}
 
 
-
+        #print recent video
 	recent_video_printing();
 
-	$dernier_count=$video_count;
+        #print file system usage
+        print "----Filesystem Usage\n";
+	system("df -h | grep Filesystem; df -h | grep sda1; echo");	
 
+	$dernier_count=$video_count;
+	$dernier_date=$date_posted;
+
+        print "----Jouant\n";
 	#system("cd -- d/$first_lang/$channel_or_user/$video; mpv *.$fileformat $subtitle_option");
 	system("cd -- d/$first_lang/$channel_or_user/$video; mpv *.$fileformat $subtitle_option --osd-level=3 --fullscreen");
 	
@@ -790,7 +831,10 @@ print "=========================================================================
 
 
 
-print "Dernier video avec subtitres: $dernier_count \n";
 recent_video_printing();
+dernier_video();
+
+print "----No videos avec subtitre (pour l.txt)\n";
+print "			#$channel_url    $channel_name    $channel_num_videos\n\n";
 
 print "======================================================================================================\n";
